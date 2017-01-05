@@ -1,6 +1,6 @@
 {
   "name": "cmacc-example-escrow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Escrow example - flowing through various steps ",
   "main": "index.js",
   "repository": "https://github.com/cmacclang/cmacc-example-escrow.git",
@@ -8,11 +8,7 @@
   "license": "MIT",
   "flat": true,
   "dependencies": {
-    "cmacc-example-geo": "cmacclang/cmacc-example-geo",
     "cmacc-example-id": "cmacclang/cmacc-example-id",
-    "cmacc-lib-fr": "cmacclang/cmacc-lib-fr",
-    "cmacc-lib-geo": "cmacclang/cmacc-lib-geo",
-    "cmacc-lib-id": "cmacclang/cmacc-lib-id",
     "cmacc-lib-us": "cmacclang/cmacc-lib-us"
   }
 }
