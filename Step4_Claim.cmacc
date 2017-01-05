@@ -1,6 +1,6 @@
-$ shipper = [../ID/fabulous_express_inc.cmacc];
+$ shipper = [yarn:/cmacc-example-id/FabulousExpressInc.cmacc];
 
-$ signed = [./Step_3_Signature.cmacc];
+$ signed = [./Step3_Signature.cmacc];
 
 $ claim = [./Claim.cmacc] => {
 	"seller" : signed.ordered.order.seller,

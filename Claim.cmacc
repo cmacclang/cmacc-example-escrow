@@ -1,22 +1,22 @@
-$ seller = [../US/_entity.cmacc];
+$ seller = [yarn:/cmacc-lib-us/_entity.cmacc];
 
-$ Seller_NA = [../US/_entity_NA.cmacc] => {
+$ Seller_NA = [yarn:/cmacc-lib-us/_entity_NA.cmacc] => {
 	"entity" : seller
 };
 
-$ purchaser = [../US/_entity.cmacc];
+$ purchaser = [yarn:/cmacc-lib-us/_entity.cmacc];
 
-$ Purchaser_NA = [../US/_entity_NA.cmacc] => {
+$ Purchaser_NA = [yarn:/cmacc-lib-us/_entity_NA.cmacc] => {
 	"entity" : purchaser
 };
 
-$ escrow = [../US/_entity.cmacc];
+$ escrow = [yarn:/cmacc-lib-us/_entity.cmacc];
 
-$ Escrow_NA = [../US/_entity_NA.cmacc] => {
+$ Escrow_NA = [yarn:/cmacc-lib-us/_entity_NA.cmacc] => {
 	"entity" : escrow
 };
 
-$ shipper = [../US/_entity.cmacc];
+$ shipper = [yarn:/cmacc-lib-us/_entity.cmacc];
 
 $ Claim_YMD = "Claim_YMD";
 
@@ -38,7 +38,7 @@ $ sign_Place = "sign_Party_Place";
 
 $ sign_Date = "sign_Party_Date";
 
-$ signParty = [../Form/_sign.cmacc] => {
+$ signParty = [yarn:/cmacc-lib-us/_sign.cmacc] => {
 	"role" : "Purchaser",
 	"person" : purchaser.sign_Rep,
 	"sign_Place" : sign_Place,
@@ -76,20 +76,3 @@ The Claim is:
 Your response is required by {{Seller_Claim_Response_Delay}}.
 
 {{signParty}}
-	
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

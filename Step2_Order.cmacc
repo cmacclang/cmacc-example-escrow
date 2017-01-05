@@ -24,9 +24,9 @@ $ Escrow_Sign_YMD = "2014-08-13";
 
 $ Escrow_Effective_YMD = "2014-08-13";
 
-$ roberta_robinson = [./node_modules/cmacc-example-id/RobertaRobinson.cmacc];
+$ roberta_robinson = [yarn://cmacc-example-id/RobertaRobinson.cmacc];
 
-$ purchaser = [./node_modules/cmacc-lib-us/_entity_Individual.cmacc] => {
+$ purchaser = [yarn://cmacc-lib-us/_entity_Individual.cmacc] => {
 	"person" : roberta_robinson,
 	"adr" : roberta_robinson.adr,
 	"sign_Rep" : roberta_robinson

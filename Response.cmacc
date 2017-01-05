@@ -1,18 +1,18 @@
-$ seller = [../US/_entity.cmacc];
+$ seller = [yarn:/cmacc-lib-us/_entity.cmacc];
 
-$ Seller_NA = [../US/_entity_NA.cmacc] => {
+$ Seller_NA = [yarn:/cmacc-lib-us/_entity_NA.cmacc] => {
 	"entity" : seller
 };
 
-$ purchaser = [../US/_entity.cmacc];
+$ purchaser = [yarn:/cmacc-lib-us/_entity.cmacc];
 
-$ Purchaser_NA = [../US/_entity_NA.cmacc] => {
+$ Purchaser_NA = [yarn:/cmacc-lib-us/_entity_NA.cmacc] => {
 	"entity" : purchaser
 };
 
-$ escrow = [../US/_entity.cmacc];
+$ escrow = [yarn:/cmacc-lib-us/_entity.cmacc];
 
-$ Escrow_NA = [../US/_entity_NA.cmacc] => {
+$ Escrow_NA = [yarn:/cmacc-lib-us/_entity_NA.cmacc] => {
 	"entity" : escrow
 };
 
@@ -30,7 +30,7 @@ $ sign_Place = "sign_Party_Place";
 
 $ sign_Date = "sign_Party_Date";
 
-$ signParty = [../Form/_sign.cmacc] => {
+$ signParty = [yarn:/cmacc-lib-us/_sign.cmacc] => {
 	"role" : "Seller",
 	"person" : seller.sign_Rep,
 	"sign_Place" : sign_Place,
@@ -51,7 +51,7 @@ Claim Date: {{Claim_YMD}}
 
 Re: Claim
 	
-{{purchaser.name_Dear}}
+{{purchaser.dear_Name}}
 
 Thank you for your Notice of Claim.  {{seller.pron.IWe}} greatly regret that you had a problem with our shipment of {{Product_Description}} 
 
@@ -60,4 +60,3 @@ Thank you also for your offer to settle this matter by: {{Purchaser_Remedy_Descr
 {{AcceptReject}}
 
 {{signParty}}
-

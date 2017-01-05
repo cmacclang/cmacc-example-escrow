@@ -6,23 +6,23 @@ $ DeliveryPayment_TimeSpan = "48 hours";
 
 $ Escrow_Fee_USD = "$1.544";
 
-$ seller = [./node_modules/cmacc-example-id/GerrysGrapesLLC.cmacc];
+$ seller = [yarn://cmacc-example-id/GerrysGrapesLLC.cmacc];
 
-$ escrow = [./node_modules/cmacc-example-id/SafeHandsInc.cmacc];
+$ escrow = [yarn://cmacc-example-id/SafeHandsInc.cmacc];
 
-$ solomon_shirley = [./node_modules/cmacc-example-id/SolomonShirley.cmacc];
+$ solomon_shirley = [yarn://cmacc-example-id/SolomonShirley.cmacc];
 
-$ arbitrator = [./node_modules/cmacc-lib-us/_entity_Individual.cmacc] => {
+$ arbitrator = [yarn://cmacc-lib-us/_entity_Individual.cmacc] => {
 	"person" : solomon_shirley,
 	"adr" : solomon_shirley.adr,
 	"sign_Rep" : solomon_shirley
 };
 
-$ shipper = [./node_modules/cmacc-example-id/FabulousExpressInc.cmacc];
+$ shipper = [yarn://cmacc-example-id/FabulousExpressInc.cmacc];
 
 $ arb = [./JAMSArbitrationChicago.cmacc];
 
-$ purchaser = [./node_modules/cmacc-lib-us/_entity.cmacc];
+$ purchaser = [yarn://cmacc-lib-us/_entity.cmacc];
 
 $ Pickup_Time_Max = "Pickup_Time_Max";
 

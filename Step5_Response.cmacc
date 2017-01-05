@@ -1,6 +1,6 @@
-$ claim = [./Step_4_Claim.cmacc];
+$ claim = [./Step4_Claim.cmacc];
 
-$ AcceptReject = [./Response_Accept.cmacc];
+$ AcceptReject = [./ResponseAccept.cmacc];
 
 $ response = [./Response.cmacc] => {
 	"seller" : claim.claim.seller,
