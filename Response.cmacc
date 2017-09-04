@@ -1,62 +1,60 @@
-$ seller = [yarn:/cmacc-lib-us/_entity.cmacc];
+$ seller = [github:///cmacclang/cmacc-lib-us/dev/_entity.cmacc]
 
-$ Seller_NA = [yarn:/cmacc-lib-us/_entity_NA.cmacc] => {
-	"entity" : seller
-};
+$ Seller_NA = [github:///cmacclang/cmacc-lib-us/dev/_entity_NA.cmacc]
+$ Seller_NA.entity = seller
 
-$ purchaser = [yarn:/cmacc-lib-us/_entity.cmacc];
+$ purchaser = [github:///cmacclang/cmacc-lib-us/dev/_entity.cmacc]
 
-$ Purchaser_NA = [yarn:/cmacc-lib-us/_entity_NA.cmacc] => {
-	"entity" : purchaser
-};
+$ Purchaser_NA = [github:///cmacclang/cmacc-lib-us/dev/_entity_NA.cmacc]
+$ Purchaser_NA.entity = purchaser
 
-$ escrow = [yarn:/cmacc-lib-us/_entity.cmacc];
+$ escrow = [github:///cmacclang/cmacc-lib-us/dev/_entity.cmacc]
 
-$ Escrow_NA = [yarn:/cmacc-lib-us/_entity_NA.cmacc] => {
-	"entity" : escrow
-};
+$ escrow_NA = [github:///cmacclang/cmacc-lib-us/dev/_entity_NA.cmacc]
+$ escrow_NA.entity = escrow
 
-$ Claim_YMD = "Claim_YMD";
+$ claim_YMD = "Claim_YMD"
 
-$ Response_YMD = "Response_YMD";
+$ response_YMD = "Response_YMD"
 
-$ Product_Description = "Product_Description";
+$ product_Description = "Product_Description"
 
-$ Purchaser_Remedy_Description = "Purchaser_Remedy_Description";
+$ purchaser_Remedy_Description = "Purchaser_Remedy_Description"
 
-$ AcceptReject = "AcceptReject";
+$ accept_Reject = "AcceptReject"
 
-$ sign_Place = "sign_Party_Place";
+$ sign_Place = "sign_Party_Place"
 
-$ sign_Date = "sign_Party_Date";
+$ sign_Date = "sign_Party_Date"
 
-$ signParty = [yarn:/cmacc-lib-us/_sign.cmacc] => {
-	"role" : "Seller",
-	"person" : seller.sign_Rep,
-	"sign_Place" : sign_Place,
-	"sign_Date" : sign_Date
-};
+$ sign_Party = [github:///cmacclang/cmacc-lib-us/dev/_sign.cmacc]
+$ sign_Party.role = "Seller"
+$ sign_Party.person = seller.sign_Rep
+$ sign_Party.sign_Place = sign_Place
+$ sign_Party.sign_Date = sign_Date
+
+// Document
 
 Seller's Response to Notice of Claim:
 
-To: {{Purchaser_NA}},"Purchaser"
+To: {{purchaser_NA}},"Purchaser"
 
-From: {{Seller_NA}}, "Seller"
+From: {{seller_NA}}, "Seller"
 
-CC: {{Escrow_NA}}, "Escrow Agent"
+CC: {{escrow_NA}}, "Escrow Agent"
 
-Date: {{Response_YMD}}
+Date: {{response_YMD}}
 
-Claim Date: {{Claim_YMD}}
+Claim Date: {{claim_YMD}}
 
 Re: Claim
 	
-{{purchaser.dear_Name}}
+{{purchaser.formal_Name}}
 
-Thank you for your Notice of Claim.  {{seller.pron.IWe}} greatly regret that you had a problem with our shipment of {{Product_Description}} 
+Thank you for your Notice of Claim.  {{seller.pron.IWe}} greatly regret that you had a problem with our shipment of {{product_Description}} 
 
-Thank you also for your offer to settle this matter by: {{Purchaser_Remedy_Description}}  
+Thank you also for your offer to settle this matter by: {{purchaser_Remedy_Description}}  
 
-{{AcceptReject}}
+{{accept_Reject}}
 
-{{signParty}}
+{{sign_Party}}

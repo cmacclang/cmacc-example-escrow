@@ -1,0 +1,64 @@
+// Parties
+
+$ seller = [yarn://cmacclang/cmacc-lib-us/dev/_entity.cmacc]
+
+$ purchaser = [yarn://cmacclang/cmacc-lib-us/dev/_entity.cmacc]
+
+$ escrow = [yarn://cmacclang/cmacc-lib-us/dev/_entity.cmacc]
+
+$ arbitrator = [yarn://cmacclang/cmacc-lib-us/dev/_entity.cmacc]
+
+$ shipper = [yarn://cmacclang/cmacc-lib-us/dev/_entity.cmacc]
+
+// Masks
+
+$ seller_NEA = [yarn://cmacclang/cmacc-lib-us/dev/_entity_NEA.cmacc]
+$ seller_NEA.entity = seller
+
+$ purchaser_NEA = [yarn://cmacclang/cmacc-lib-us/dev/_entity_NEA.cmacc]
+$ purchaser_NEA.entity = purchaser
+
+$ escrow_NEA = [yarn://cmacclang/cmacc-lib-us/dev/_entity_NEA.cmacc]
+$ escrow_NEA.entity = escrow
+
+$ shipper_NEA = [yarn://cmacclang/cmacc-lib-us/dev/_entity_NEA.cmacc]
+$ shipper_NEA.entity = shipper
+
+$ arbitrator_NEA = [yarn://cmacclang/cmacc-lib-us/dev/_entity_NEA.cmacc]
+$ arbitrator_NEA.entity = arbitrator
+
+$ product_Description = "Product_Description"
+
+$ price_USD = "Price_USD"
+
+$ pickup_Time_Max = "Pickup_Time_Max"
+
+$ delivery_Claim_Delay = "DeliveryClaim_Delay"
+
+$ delivery_Payment_TimeSpan = "DeliveryPayment_TimeSpan"
+
+$ escrow_Fee_USD = "Escrow_Fee_USD"
+
+$ escrow_Sign_YMD = "Escrow_Sign_YMD"
+
+$ escrow_Effective_YMD = "Escrow_Effective_YMD"
+
+$ erb_Fee_USD = "ARB_Fee_USD"
+
+$ dispute_Notice_Within_Days = "Dispute_Notice_Within_Days"
+
+$ arb_Seat_City = "Arb_Seat_City"
+
+$ arb_Org = "Arb_Org"
+
+$ arb_Court_CountyState = "Arb_Court_CountyState"
+
+// Document
+
+
+ESCROW AGREEMENT
+
+This escrow agreement ("Escrow Agreement") is made and entered into on {{escrow_Effective_YMD}} by and among:
+
+{{purchaser_NEA}}, ("Purchaser"),
+

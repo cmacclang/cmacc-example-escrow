@@ -1,6 +1,5 @@
-$ seller = [yarn:/cmacc-lib-us/_entity.cmacc] => {
-}
+$ seller = [github:///cmacclang/cmacc-lib-us/dev/_entity.cmacc]
 
-$ seller_Counterproposal = "Seller_Counterproposal"
+$ seller_Counter_Proposal = "Seller_Counterproposal"
 
-{{seller.pron.IWe}} would like to propose that instead of your offer, {{seller.pron.Iwe}} will {{seller_Counterproposal}}  
+{{seller.pron.IWe}} would like to propose that instead of your offer, {{seller.pron.Iwe}} will {{seller_Counter_Proposal}}  

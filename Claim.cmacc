@@ -1,78 +1,76 @@
-$ seller = [yarn:/cmacc-lib-us/_entity.cmacc];
+$ seller = [github:///cmacclang/cmacc-lib-us/dev/_entity.cmacc]
 
-$ Seller_NA = [yarn:/cmacc-lib-us/_entity_NA.cmacc] => {
-	"entity" : seller
-};
+$ seller_NA = [github:///cmacclang/cmacc-lib-us/dev/_entity_NA.cmacc]
+$ seller_NA.entity = seller
 
-$ purchaser = [yarn:/cmacc-lib-us/_entity.cmacc];
+$ purchaser = [github:///cmacclang/cmacc-lib-us/dev/_entity.cmacc]
 
-$ Purchaser_NA = [yarn:/cmacc-lib-us/_entity_NA.cmacc] => {
-	"entity" : purchaser
-};
+$ purchaser_NA = [github:///cmacclang/cmacc-lib-us/dev/_entity_NA.cmacc]
+$ purchaser_NA.entity" : purchaser
 
-$ escrow = [yarn:/cmacc-lib-us/_entity.cmacc];
+$ escrow = [github:///cmacclang/cmacc-lib-us/dev/_entity.cmacc]
 
-$ Escrow_NA = [yarn:/cmacc-lib-us/_entity_NA.cmacc] => {
-	"entity" : escrow
-};
+$ escrow_NA = [github:///cmacclang/cmacc-lib-us/dev/_entity_NA.cmacc]
+$ escrow_NA.entity = escrow
 
-$ shipper = [yarn:/cmacc-lib-us/_entity.cmacc];
+$ shipper = [github:///cmacclang/cmacc-lib-us/dev/_entity.cmacc]
 
-$ Claim_YMD = "Claim_YMD";
+$ claim_YMD = "Claim_YMD"
 
-$ Delivery_YMD = "Delivery_YMD";
+$ delivery_YMD = "Delivery_YMD"
 
-$ Parcel_num = "Parcel_num";
+$ parcel_Num = "Parcel_num"
 
-$ Product_Description = "Product_Description";
+$ product_Description = "Product_Description"
 
-$ Escrow_Effective_YMD = "Escrow_Effective_YMD";
+$ escrow_Effective_YMD = "Escrow_Effective_YMD"
 
-$ Purchaser_Claim_Description = "Purchaser_Claim_Description";
+$ purchaser_Claim_Description = "Purchaser_Claim_Description"
 
-$ Seller_Claim_Response_Delay = "Seller_Claim_Response_Delay";
+$ seller_Claim_Response_Delay = "Seller_Claim_Response_Delay"
 
-$ Purchaser_Remedy_Description = "Purchaser_Remedy_Description";
+$ purchaser_Remedy_Description = "Purchaser_Remedy_Description"
 
-$ sign_Place = "sign_Party_Place";
+$ sign_Place = "sign_Party_Place"
 
-$ sign_Date = "sign_Party_Date";
+$ sign_Date = "sign_Party_Date"
 
-$ signParty = [yarn:/cmacc-lib-us/_sign.cmacc] => {
-	"role" : "Purchaser",
-	"person" : purchaser.sign_Rep,
-	"sign_Place" : sign_Place,
-	"sign_Date" : sign_Date
-};
+$ sign_Party = [github:///cmacclang/cmacc-lib-us/dev/_sign.cmacc]
+$ sign_Party.role = "Purchaser"
+$ sign_Party.person = purchaser.sign_Rep
+$ sign_Party.sign_Place = sign_Place
+$ sign_Party.sign_Date = sign_Date
+
+// Document
 
 Notice of Claim:
 
-To: {{Seller_NA}}, "Seller"
+To: {{seller_NA}}, "Seller"
 
-From: {{Purchaser_NA}}, "Purchaser"
+From: {{purchaser_NA}}, "Purchaser"
 
-CC: {{Escrow_NA}}, "Escrow Agent"
+CC: {{escrow_NA}}, "Escrow Agent"
 
-Date: {{Claim_YMD}}
+Date: {{claim_YMD}}
 
 Re: Claim
 
 
-Dear {{seller.name_Dear}}:
+Dear {{seller.formal_Name}}:
 
-This will inform you that on {{Delivery_YMD}}, {{shipper.name_Full}} delivered package {{Parcel_num}} to {{purchaser.pron.meus}}. The contents were sent by you and described as:
+This will inform you that on {{delivery_YMD}}, {{shipper.name_Full}} delivered package {{parcel_Num}} to {{purchaser.pron.meus}}. The contents were sent by you and described as:
 
-{{Product_Description}}.
+{{product_Description}}.
 
-This notifies you and the Escrow Agent under the terms of our Escrow Agreement dated {{Escrow_Effective_YMD}} of {{purchaser.pron.myour}} "Claim."
+This notifies you and the Escrow Agent under the terms of our Escrow Agreement dated {{escrow_Effective_YMD}} of {{purchaser.pron.myour}} "Claim."
 
 The Claim is:
-{{Purchaser_Claim_Description}}
+{{purchaser_Claim_Description}}
 
-{{purchaser.pron.IWe}} would appreciate it if you would remedy this problem by:
+{{purchaser.pron.Iwe}} would appreciate it if you would remedy this problem by:
 
-{{Purchaser_Remedy_Description}}
+{{purchaser_Remedy_Description}}
 
-Your response is required by {{Seller_Claim_Response_Delay}}.
+Your response is required by {{seller_Claim_Response_Delay}}.
 
-{{signParty}}
+{{sign_Party}}

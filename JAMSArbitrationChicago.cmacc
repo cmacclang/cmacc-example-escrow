@@ -1,9 +1,9 @@
-$ seat_city = "Chicago, Illinois";
+$ seat_City = "Chicago, Illinois"
 
-$ org = "JAMS";
+$ org = "JAMS"
 
-$ court_CountyState = "Cook County, Illinois";
+$ court_CountyState = "Cook County, Illinois"
 
-$ fee_USD = "$50.00";
+$ fee_USD = "$50.00"
 
-$ state = "Illinois";
+$ state = "Illinois"
