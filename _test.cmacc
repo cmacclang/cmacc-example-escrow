@@ -9,11 +9,13 @@ $ escrow_Sign_YMD = "2014-08-13"
 $ escrow_Effective_YMD = "2014-08-13"
 
 $ order = [./Step1_Parties.cmacc]
-$ order.pickup_Time_Max = pickup_Time_Max
-$ order.price_USD = price_USD
-$ order.escrow_Sign_YMD = escrow_Sign_YMD
-$ order.escrow_Effective_YMD = escrow_Effective_YMD
-$ order.product_Description = product_Description
+$ offer = order.offer
+
+$ offer.pickup_Time_Max = pickup_Time_Max
+$ offer.price_USD = price_USD
+$ offer.escrow_Sign_YMD = escrow_Sign_YMD
+$ offer.escrow_Effective_YMD = escrow_Effective_YMD
+$ offer.product_Description = product_Description
 
 // Document
 
