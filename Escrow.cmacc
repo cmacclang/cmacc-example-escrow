@@ -1,3 +1,31 @@
+// Parameters
+
+$ product_Description = "Product_Description"
+
+$ price_USD = "Price_USD"
+
+$ pickup_Time_Max = "Pickup_Time_Max"
+
+$ delivery_Claim_Delay = "DeliveryClaim_Delay"
+
+$ delivery_Payment_TimeSpan = "DeliveryPayment_TimeSpan"
+
+$ escrow_Fee_USD = "Escrow_Fee_USD"
+
+$ escrow_Sign_YMD = "Escrow_Sign_YMD"
+
+$ escrow_Effective_YMD = "Escrow_Effective_YMD"
+
+$ arb_Fee_USD = "ARB_Fee_USD"
+
+$ dispute_Notice_Within_Days = "Dispute_Notice_Within_Days"
+
+$ arb_Seat_City = "Arb_Seat_City"
+
+$ arb_Org = "Arb_Org"
+
+$ arb_Court_CountyState = "Arb_Court_CountyState"
+
 // Parties
 
 $ seller = [yarn://cmacc-lib-us/_entity.cmacc]
@@ -27,32 +55,6 @@ $ shipper_NEA.entity = shipper
 $ arbitrator_NEA = [yarn:/cmacc-lib-us/_entity_NEA.cmacc]
 $ arbitrator_NEA.entity = arbitrator
 
-$ product_Description = "Product_Description"
-
-$ price_USD = "Price_USD"
-
-$ pickup_Time_Max = "Pickup_Time_Max"
-
-$ delivery_Claim_Delay = "DeliveryClaim_Delay"
-
-$ delivery_Payment_TimeSpan = "DeliveryPayment_TimeSpan"
-
-$ escrow_Fee_USD = "Escrow_Fee_USD"
-
-$ escrow_Sign_YMD = "Escrow_Sign_YMD"
-
-$ escrow_Effective_YMD = "Escrow_Effective_YMD"
-
-$ erb_Fee_USD = "ARB_Fee_USD"
-
-$ dispute_Notice_Within_Days = "Dispute_Notice_Within_Days"
-
-$ arb_Seat_City = "Arb_Seat_City"
-
-$ arb_Org = "Arb_Org"
-
-$ arb_Court_CountyState = "Arb_Court_CountyState"
-
 // Document
 
 
@@ -74,7 +76,7 @@ Additional persons referenced in this Agreement are:
  
 {{arbitrator_NEA}} ("Arbitrator").
 
-WHEREAS, the Purchaser and the Seller have entered into a purchase agreement ("Purchase Agreement") for the sale to the Purchaser of {{Product_Description}} (the "Products") owned by the Seller in exchange for {{Price_USD}} (the "Purchase Price") (altogether, the "Transaction");
+WHEREAS, the Purchaser and the Seller have entered into a purchase agreement ("Purchase Agreement") for the sale to the Purchaser of {{product_Description}} (the "Products") owned by the Seller in exchange for {{price_USD}} (the "Purchase Price") (altogether, the "Transaction");
 
 WHEREAS, pursuant to said Purchase Agreement, the Purchaser has agreed to deposit the Purchase Price into an Escrow Account ("the Escrow Account");
 

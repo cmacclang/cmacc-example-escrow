@@ -1,64 +1,20 @@
-// Parties
+$ product_Description = "eighteen cases of grape preserves"
 
-$ seller = [yarn://cmacclang/cmacc-lib-us/dev/_entity.cmacc]
+$ price_USD = "$650.00"
 
-$ purchaser = [yarn://cmacclang/cmacc-lib-us/dev/_entity.cmacc]
+$ pickup_Time_Max = "2014-08-15"
 
-$ escrow = [yarn://cmacclang/cmacc-lib-us/dev/_entity.cmacc]
+$ escrow_Sign_YMD = "2014-08-13"
 
-$ arbitrator = [yarn://cmacclang/cmacc-lib-us/dev/_entity.cmacc]
+$ escrow_Effective_YMD = "2014-08-13"
 
-$ shipper = [yarn://cmacclang/cmacc-lib-us/dev/_entity.cmacc]
-
-// Masks
-
-$ seller_NEA = [yarn://cmacclang/cmacc-lib-us/dev/_entity_NEA.cmacc]
-$ seller_NEA.entity = seller
-
-$ purchaser_NEA = [yarn://cmacclang/cmacc-lib-us/dev/_entity_NEA.cmacc]
-$ purchaser_NEA.entity = purchaser
-
-$ escrow_NEA = [yarn://cmacclang/cmacc-lib-us/dev/_entity_NEA.cmacc]
-$ escrow_NEA.entity = escrow
-
-$ shipper_NEA = [yarn://cmacclang/cmacc-lib-us/dev/_entity_NEA.cmacc]
-$ shipper_NEA.entity = shipper
-
-$ arbitrator_NEA = [yarn://cmacclang/cmacc-lib-us/dev/_entity_NEA.cmacc]
-$ arbitrator_NEA.entity = arbitrator
-
-$ product_Description = "Product_Description"
-
-$ price_USD = "Price_USD"
-
-$ pickup_Time_Max = "Pickup_Time_Max"
-
-$ delivery_Claim_Delay = "DeliveryClaim_Delay"
-
-$ delivery_Payment_TimeSpan = "DeliveryPayment_TimeSpan"
-
-$ escrow_Fee_USD = "Escrow_Fee_USD"
-
-$ escrow_Sign_YMD = "Escrow_Sign_YMD"
-
-$ escrow_Effective_YMD = "Escrow_Effective_YMD"
-
-$ erb_Fee_USD = "ARB_Fee_USD"
-
-$ dispute_Notice_Within_Days = "Dispute_Notice_Within_Days"
-
-$ arb_Seat_City = "Arb_Seat_City"
-
-$ arb_Org = "Arb_Org"
-
-$ arb_Court_CountyState = "Arb_Court_CountyState"
+$ order = [./Step1_Parties.cmacc]
+$ order.pickup_Time_Max = pickup_Time_Max
+$ order.price_USD = price_USD
+$ order.escrow_Sign_YMD = escrow_Sign_YMD
+$ order.escrow_Effective_YMD = escrow_Effective_YMD
+$ order.product_Description = product_Description
 
 // Document
 
-
-ESCROW AGREEMENT
-
-This escrow agreement ("Escrow Agreement") is made and entered into on {{escrow_Effective_YMD}} by and among:
-
-{{purchaser_NEA}}, ("Purchaser"),
-
+{{order}}

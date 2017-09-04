@@ -1,3 +1,5 @@
+// Parameters
+
 $ dispute_Notice_Within_Days = "5 days"
 
 $ delivery_Claim_Delay = "24 hours"
@@ -5,6 +7,8 @@ $ delivery_Claim_Delay = "24 hours"
 $ delivery_Payment_TimeSpan = "48 hours"
 
 $ escrow_Fee_USD = "$1.5"
+
+// External files
 
 $ seller = [yarn:/cmacc-example-id/GerrysGrapesLLC.cmacc]
 $ seller.entity_a = seller.entity_a_EN

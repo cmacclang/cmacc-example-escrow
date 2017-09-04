@@ -1,19 +1,4 @@
-$ seller = [yarn:/cmacc-lib-us/_entity.cmacc]
-
-$ seller_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
-$ seller_NA.entity = seller
-
-$ purchaser = [yarn://cmacc-lib-us/_entity.cmacc]
-
-$ purchaser_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
-$ purchaser_NA.entity" : purchaser
-
-$ escrow = [yarn://cmacc-lib-us/_entity.cmacc]
-
-$ escrow_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
-$ escrow_NA.entity = escrow
-
-$ shipper = [yarn://cmacc-lib-us/_entity.cmacc]
+// Parameters
 
 $ claim_YMD = "Claim_YMD"
 
@@ -34,6 +19,25 @@ $ purchaser_Remedy_Description = "Purchaser_Remedy_Description"
 $ sign_Place = "sign_Party_Place"
 
 $ sign_Date = "sign_Party_Date"
+
+// Files called
+
+$ seller = [yarn:/cmacc-lib-us/_entity.cmacc]
+
+$ seller_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
+$ seller_NA.entity = seller
+
+$ purchaser = [yarn://cmacc-lib-us/_entity.cmacc]
+
+$ purchaser_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
+$ purchaser_NA.entity" : purchaser
+
+$ escrow = [yarn://cmacc-lib-us/_entity.cmacc]
+
+$ escrow_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
+$ escrow_NA.entity = escrow
+
+$ shipper = [yarn://cmacc-lib-us/_entity.cmacc]
 
 $ sign_Party = [yarn://cmacc-lib-us/_sign.cmacc]
 $ sign_Party.role = "Purchaser"

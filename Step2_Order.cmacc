@@ -1,3 +1,5 @@
+// Parameters
+
 $ product_Description = "eighteen cases of grape preserves"
 
 $ price_USD = "$650.00"
@@ -7,6 +9,8 @@ $ pickup_Time_Max = "2014-08-15"
 $ escrow_Sign_YMD = "2014-08-13"
 
 $ escrow_Effective_YMD = "2014-08-13"
+
+// External files
 
 $ roberta_Robinson = [yarn:/cmacc-example-id/RobertaRobinson.cmacc]
 
