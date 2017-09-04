@@ -1,0 +1,16 @@
+// External files
+
+$ solomon_Shirley = [yarn:/cmacc-example-id/SolomonShirley.cmacc]
+
+$ arbitrator = [yarn:/cmacc-lib-us/_entity_Individual.cmacc]
+
+$ arbitrator.person = solomon_Shirley
+$ arbitrator.adr = solomon_Shirley.adr
+$ arbitrator.sign_Rep = solomon_Shirley
+
+$ deal = [./Escrow.cmacc]
+$ deal.arbitrator = arbitrator
+
+// Document 
+
+{{deal}}

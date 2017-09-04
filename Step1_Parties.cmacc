@@ -21,9 +21,11 @@ $ escrow.adr_Type = escrow.adr_Type_EN
 $ solomon_Shirley = [yarn:/cmacc-example-id/SolomonShirley.cmacc]
 
 $ arbitrator = [yarn:/cmacc-lib-us/_entity_Individual.cmacc]
-$ arbitrator.person = solomon_Shirley
-$ arbitrator.adr = solomon_Shirley.adr
-$ arbitrator.sign_Rep = solomon_Shirley
+$ arb_entity = arbitrator.person
+
+$ arb_entity = solomon_Shirley
+$ arb_entity.adr = solomon_Shirley.adr
+$ arb_entity.sign_Rep = solomon_Shirley
 
 $ shipper = [yarn:/cmacc-example-id/FabulousExpressInc.cmacc]
 $ shipper.entity_a = shipper.entity_a_EN
@@ -31,20 +33,20 @@ $ shipper.adr_Type = shipper.adr_Type_EN
 
 $ arb = [./JAMSArbitrationChicago.cmacc]
 
-$ offer = [./Escrow.cmacc]
-$ offer.seller = seller
-$ offer.escrow = escrow
-$ offer.arbitrator = arbitrator
-$ offer.shipper = shipper
-$ offer.delivery_Claim_Delay = delivery_Claim_Delay
-$ offer.delivery_Payment_TimeSpan = delivery_Payment_TimeSpan
-$ offer.escrow_Fee_USD = escrow_Fee_USD
-$ offer.arb_Fee_USD = arb.fee_USD
-$ offer.dispute_Notice_Within_Days = dispute_Notice_Within_Days
-$ offer.arb_Seat_City = arb.seat_City
-$ offer.arb_Org = arb.org
-$ offer.arb_Court_CountyState = arb.state
+$ deal = [./Escrow.cmacc]
+$ deal.seller = seller
+$ deal.escrow = escrow
+$ deal.arbitrator = arbitrator
+$ deal.shipper = shipper
+$ deal.delivery_Claim_Delay = delivery_Claim_Delay
+$ deal.delivery_Payment_TimeSpan = delivery_Payment_TimeSpan
+$ deal.escrow_Fee_USD = escrow_Fee_USD
+$ deal.arb_Fee_USD = arb.fee_USD
+$ deal.dispute_Notice_Within_Days = dispute_Notice_Within_Days
+$ deal.arb_Seat_City = arb.seat_City
+$ deal.arb_Org = arb.org
+$ deal.arb_Court_CountyState = arb.state
 
 // Document 
 
-{{offer}}
+{{deal}}
