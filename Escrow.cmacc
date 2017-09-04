@@ -1,30 +1,30 @@
 // Parties
 
-$ seller = [yarn://cmacclang/cmacc-lib-us/dev/_entity.cmacc]
+$ seller = [yarn://cmacc-lib-us/_entity.cmacc]
 
-$ purchaser = [yarn://cmacclang/cmacc-lib-us/dev/_entity.cmacc]
+$ purchaser = [yarn://cmacc-lib-us/_entity.cmacc]
 
-$ escrow = [yarn://cmacclang/cmacc-lib-us/dev/_entity.cmacc]
+$ escrow = [yarn://cmacc-lib-us/_entity.cmacc]
 
-$ arbitrator = [yarn://cmacclang/cmacc-lib-us/dev/_entity.cmacc]
+$ arbitrator = [yarn://cmacc-lib-us/_entity.cmacc]
 
-$ shipper = [yarn://cmacclang/cmacc-lib-us/dev/_entity.cmacc]
+$ shipper = [yarn://cmacc-lib-us/_entity.cmacc]
 
 // Masks
 
-$ seller_NEA = [yarn://cmacclang/cmacc-lib-us/dev/_entity_NEA.cmacc]
+$ seller_NEA = [yarn://cmacc-lib-us/_entity_NEA.cmacc]
 $ seller_NEA.entity = seller
 
-$ purchaser_NEA = [yarn://cmacclang/cmacc-lib-us/dev/_entity_NEA.cmacc]
+$ purchaser_NEA = [yarn:/cmacc-lib-us/_entity_NEA.cmacc]
 $ purchaser_NEA.entity = purchaser
 
-$ escrow_NEA = [yarn://cmacclang/cmacc-lib-us/dev/_entity_NEA.cmacc]
+$ escrow_NEA = [yarn:/cmacc-lib-us/_entity_NEA.cmacc]
 $ escrow_NEA.entity = escrow
 
-$ shipper_NEA = [yarn://cmacclang/cmacc-lib-us/dev/_entity_NEA.cmacc]
+$ shipper_NEA = [yarn:/cmacc-lib-us/_entity_NEA.cmacc]
 $ shipper_NEA.entity = shipper
 
-$ arbitrator_NEA = [yarn://cmacclang/cmacc-lib-us/dev/_entity_NEA.cmacc]
+$ arbitrator_NEA = [yarn:/cmacc-lib-us/_entity_NEA.cmacc]
 $ arbitrator_NEA.entity = arbitrator
 
 $ product_Description = "Product_Description"

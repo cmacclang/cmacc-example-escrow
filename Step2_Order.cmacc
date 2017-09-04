@@ -8,9 +8,9 @@ $ escrow_Sign_YMD = "2014-08-13"
 
 $ escrow_Effective_YMD = "2014-08-13"
 
-$ roberta_Robinson = [github:///cmacclang/cmacc-example-id/dev/RobertaRobinson.cmacc]
+$ roberta_Robinson = [yarn:/cmacc-example-id/RobertaRobinson.cmacc]
 
-$ purchaser = [github:///cmacclang/cmacc-lib-us/dev/_entity_Individual.cmacc]
+$ purchaser = [yarn:/cmacc-lib-us/_entity_Individual.cmacc]
 $ purchaser.person = roberta_Robinson
 $ purchaser.adr = roberta_Robinson.adr
 $ purchaser.sign_Rep = roberta_Robinson

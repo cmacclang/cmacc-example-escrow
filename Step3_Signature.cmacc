@@ -26,7 +26,7 @@ $ order_Escrow = ordered.order.escrow
 
 $ order_Arbitrator = ordered.order.arbitrator
 
-$ sign_Block = [github:///cmacclang/cmacc-lib-us/dev/_sign4.cmacc]
+$ sign_Block = [yarn:/cmacc-lib-us/_sign4.cmacc]
 $ sign_Block.party1 = order_Seller
 $ sign_Block.party2 = order_Purchaser
 $ sign_Block.party3 = order_Escrow

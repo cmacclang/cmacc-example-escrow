@@ -1,19 +1,19 @@
-$ seller = [github:///cmacclang/cmacc-lib-us/dev/_entity.cmacc]
+$ seller = [yarn:/cmacc-lib-us/_entity.cmacc]
 
-$ seller_NA = [github:///cmacclang/cmacc-lib-us/dev/_entity_NA.cmacc]
+$ seller_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
 $ seller_NA.entity = seller
 
-$ purchaser = [github:///cmacclang/cmacc-lib-us/dev/_entity.cmacc]
+$ purchaser = [yarn://cmacc-lib-us/_entity.cmacc]
 
-$ purchaser_NA = [github:///cmacclang/cmacc-lib-us/dev/_entity_NA.cmacc]
+$ purchaser_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
 $ purchaser_NA.entity" : purchaser
 
-$ escrow = [github:///cmacclang/cmacc-lib-us/dev/_entity.cmacc]
+$ escrow = [yarn://cmacc-lib-us/_entity.cmacc]
 
-$ escrow_NA = [github:///cmacclang/cmacc-lib-us/dev/_entity_NA.cmacc]
+$ escrow_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
 $ escrow_NA.entity = escrow
 
-$ shipper = [github:///cmacclang/cmacc-lib-us/dev/_entity.cmacc]
+$ shipper = [yarn://cmacc-lib-us/_entity.cmacc]
 
 $ claim_YMD = "Claim_YMD"
 
@@ -35,7 +35,7 @@ $ sign_Place = "sign_Party_Place"
 
 $ sign_Date = "sign_Party_Date"
 
-$ sign_Party = [github:///cmacclang/cmacc-lib-us/dev/_sign.cmacc]
+$ sign_Party = [yarn://cmacc-lib-us/_sign.cmacc]
 $ sign_Party.role = "Purchaser"
 $ sign_Party.person = purchaser.sign_Rep
 $ sign_Party.sign_Place = sign_Place
