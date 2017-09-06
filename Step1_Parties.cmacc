@@ -19,6 +19,10 @@ $ escrow.entity_a = escrow.entity_a_EN
 $ escrow.adr_Type = escrow.adr_Type_EN
 
 $ arbitrator = [yarn://cmacc-lib-us/_entity_Individual.cmacc]
+$ solomon_Shirley = [yarn:/cmacc-example-id/SolomonShirley.cmacc]
+$ arbitrator.individual = solomon_Shirley
+$ arbitrator.adr = solomon_Shirley.adr
+$ arbitrator.sign_Rep = solomon_Shirley
 
 $ shipper = [yarn://cmacc-example-id/FabulousExpressInc.cmacc]
 $ shipper.entity_a = shipper.entity_a_EN
@@ -26,7 +30,10 @@ $ shipper.adr_Type = shipper.adr_Type_EN
 
 $ arb = [./JAMSArbitrationChicago.cmacc]
 
+// Data binding
+
 $ deal = [./Escrow.cmacc]
+
 $ deal.seller = seller
 $ deal.escrow = escrow
 $ deal.arbitrator = arbitrator

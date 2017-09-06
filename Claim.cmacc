@@ -1,5 +1,7 @@
 // Parameters
 
+$ seller_Claim_Response_Delay = "two business days"
+
 $ claim_YMD = "Claim_YMD"
 
 $ delivery_YMD = "Delivery_YMD"
@@ -11,8 +13,6 @@ $ product_Description = "Product_Description"
 $ escrow_Effective_YMD = "Escrow_Effective_YMD"
 
 $ purchaser_Claim_Description = "Purchaser_Claim_Description"
-
-$ seller_Claim_Response_Delay = "Seller_Claim_Response_Delay"
 
 $ purchaser_Remedy_Description = "Purchaser_Remedy_Description"
 
