@@ -15,17 +15,17 @@ $ escrow_Effective_YMD = "2014-08-13"
 $ roberta_Robinson = [yarn:/cmacc-example-id/RobertaRobinson.cmacc]
 
 $ purchaser = [yarn:/cmacc-lib-us/_entity_Individual.cmacc]
-$ purchaser.person = roberta_Robinson
-$ purchaser.adr = roberta_Robinson.adr
-$ purchaser.sign_Rep = roberta_Robinson
+$ purchaser.individual = roberta_Robinson
 
 $ order = [./Step1_Parties.cmacc]
-$ order.purchaser = purchaser
-$ order.pickup_Time_Max = pickup_Time_Max
-$ order.price_USD = price_USD
-$ order.escrow_Sign_YMD = escrow_Sign_YMD
-$ order.escrow_Effective_YMD = escrow_Effective_YMD
-$ order.product_Description = product_Description
+
+$ deal = order.deal
+$ deal.purchaser = purchaser
+$ deal.pickup_Time_Max = pickup_Time_Max
+$ deal.price_USD = price_USD
+$ deal.escrow_Sign_YMD = escrow_Sign_YMD
+$ deal.escrow_Effective_YMD = escrow_Effective_YMD
+$ deal.product_Description = product_Description
 
 // Document
 

@@ -18,14 +18,7 @@ $ escrow = [yarn:/cmacc-example-id/SafeHandsInc.cmacc]
 $ escrow.entity_a = escrow.entity_a_EN
 $ escrow.adr_Type = escrow.adr_Type_EN
 
-$ solomon_Shirley = [yarn:/cmacc-example-id/SolomonShirley.cmacc]
-
 $ arbitrator = [yarn:/cmacc-lib-us/_entity_Individual.cmacc]
-$ arb_entity = arbitrator.person
-
-$ arb_entity = solomon_Shirley
-$ arb_entity.adr = solomon_Shirley.adr
-$ arb_entity.sign_Rep = solomon_Shirley
 
 $ shipper = [yarn:/cmacc-example-id/FabulousExpressInc.cmacc]
 $ shipper.entity_a = shipper.entity_a_EN
@@ -38,6 +31,7 @@ $ deal.seller = seller
 $ deal.escrow = escrow
 $ deal.arbitrator = arbitrator
 $ deal.shipper = shipper
+
 $ deal.delivery_Claim_Delay = delivery_Claim_Delay
 $ deal.delivery_Payment_TimeSpan = delivery_Payment_TimeSpan
 $ deal.escrow_Fee_USD = escrow_Fee_USD

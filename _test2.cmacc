@@ -4,7 +4,7 @@ $ solomon_Shirley = [yarn:/cmacc-example-id/SolomonShirley.cmacc]
 
 $ arbitrator = [yarn:/cmacc-lib-us/_entity_Individual.cmacc]
 
-$ arbitrator.person = solomon_Shirley
+$ arbitrator.individual = solomon_Shirley
 $ arbitrator.adr = solomon_Shirley.adr
 $ arbitrator.sign_Rep = solomon_Shirley
 
@@ -13,4 +13,14 @@ $ deal.arbitrator = arbitrator
 
 // Document 
 
+1. {{arbitrator.individual.full_Name}}
+2. {{deal.arbitrator.individual.full_Name}}
+
+$ arbitrator_NEA = [yarn:/cmacc-lib-us/_entity_NEA.cmacc]
+$ arbitrator_NEA.entity = arbitrator
+
+1. {{arbitrator_NEA}}
+1. {{arbitrator_NEA.entity.full_Name}}
+
+// # hello
 {{deal}}

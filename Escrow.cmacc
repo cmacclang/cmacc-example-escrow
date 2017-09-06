@@ -36,7 +36,6 @@ $ escrow = [yarn://cmacc-lib-us/_entity.cmacc]
 
 $ arbitrator = [yarn://cmacc-lib-us/_entity.cmacc]
 
-
 $ shipper = [yarn://cmacc-lib-us/_entity.cmacc]
 
 // Masks
@@ -57,7 +56,6 @@ $ arbitrator_NEA = [yarn:/cmacc-lib-us/_entity_NEA.cmacc]
 $ arbitrator_NEA.entity = arbitrator
 
 // Document
-
 
 ESCROW AGREEMENT
 
