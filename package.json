@@ -10,7 +10,7 @@
   "dependencies": {
     "cmacc-example-id": "2.0.3",
     "cmacc-lib-lang": "2.0.3",
-    "cmacc-lib-us": "2.0.3"
+    "cmacc-lib-us": "2.0.4"
   },
   "resolutions": {
     "cmacc-lib-lang": "2.0.3",
