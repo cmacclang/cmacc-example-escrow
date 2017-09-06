@@ -1,4 +1,4 @@
-$ shipper = [yarn://macc-example-id/FabulousExpressInc.cmacc]
+$ shipper = [yarn://cmacc-example-id/FabulousExpressInc.cmacc]
 
 $ signed = [./Step3_Signature.cmacc]
 

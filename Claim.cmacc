@@ -22,7 +22,7 @@ $ sign_Date = "sign_Party_Date"
 
 // Files called
 
-$ seller = [yarn://macc-lib-us/_entity.cmacc]
+$ seller = [yarn://cmacc-lib-us/_entity.cmacc]
 
 $ seller_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
 $ seller_NA.entity = seller

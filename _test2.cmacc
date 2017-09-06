@@ -1,8 +1,8 @@
 // External files
 
-$ solomon_Shirley = [yarn://macc-example-id/SolomonShirley.cmacc]
+$ solomon_Shirley = [yarn://cmacc-example-id/SolomonShirley.cmacc]
 
-$ arbitrator = [yarn://macc-lib-us/_entity_Individual.cmacc]
+$ arbitrator = [yarn://cmacc-lib-us/_entity_Individual.cmacc]
 
 $ arbitrator.individual = solomon_Shirley
 $ arbitrator.adr = solomon_Shirley.adr
@@ -16,7 +16,7 @@ $ deal.arbitrator = arbitrator
 1. {{arbitrator.individual.full_Name}}
 2. {{deal.arbitrator.individual.full_Name}}
 
-$ arbitrator_NEA = [yarn://macc-lib-us/_entity_NEA.cmacc]
+$ arbitrator_NEA = [yarn://cmacc-lib-us/_entity_NEA.cmacc]
 $ arbitrator_NEA.entity = arbitrator
 
 1. {{arbitrator_NEA}}
