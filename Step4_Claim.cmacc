@@ -12,17 +12,17 @@ $ purchaser_Remedy_Description = "Two new cases of grape preserves."
 
 $ sign_Date = "2014-08-16"
 
-// External files
-
-$ claim = [./Claim.cmacc]
+$ purchaser_Signature = "xRoberta"
 
 // Data binding
 
 $ signed = [./Step3_Signature.cmacc]
 
-$ sign_Place = signed.ordered.order.roberta_robinson.adr.street.city.name
-
 $ deal = signed.ordered.order.deal
+
+$ sign_Place = deal.purchaser.adr.street.city.name
+
+$ claim = [./Claim.cmacc]
 
 $ claim.seller = deal.seller
 $ claim.purchaser = deal.purchaser
@@ -31,12 +31,13 @@ $ claim.shipper = deal.shipper
 $ claim.claim_YMD = claim_YMD
 $ claim.delivery_YMD = delivery_YMD
 $ claim.parcel_Num = parcel_Num
-$ claim.product_Description = signed.ordered.order.product_Description
-$ claim.escrow_Effective_YMD = signed.ordered.order.escrow_Effective_YMD
+$ claim.product_Description = deal.product_Description
+$ claim.escrow_Effective_YMD = deal.escrow_Effective_YMD
 $ claim.purchaser_Claim_Description = purchaser_Claim_Description
 $ claim.purchaser_Remedy_Description = purchaser_Remedy_Description
 $ claim.sign_Place = sign_Place
 $ claim.sign_Date = sign_Date
+$ claim.sign_Signature = purchaser_Signature
 
 // Document
 

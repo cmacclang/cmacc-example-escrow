@@ -1,22 +1,46 @@
-$ product_Description = "eighteen cases of grape preserves"
+// Parameters
 
-$ price_USD = "$650.00"
+$ seller_Claim_Response_Delay = "two business days"
 
-$ pickup_Time_Max = "2014-08-15"
+$ claim_YMD = "Claim_YMD"
 
-$ escrow_Sign_YMD = "2014-08-13"
+$ delivery_YMD = "Delivery_YMD"
 
-$ escrow_Effective_YMD = "2014-08-13"
+$ parcel_Num = "Parcel_num"
 
-$ step1 = [./Step1_Parties.cmacc]
-$ step2 = step1.deal
+$ product_Description = "Product_Description"
 
-$ step2.pickup_Time_Max = pickup_Time_Max
-$ step2.price_USD = price_USD
-$ step2.escrow_Sign_YMD = escrow_Sign_YMD
-$ step2.escrow_Effective_YMD = escrow_Effective_YMD
-$ step2.product_Description = product_Description
+$ escrow_Effective_YMD = "Escrow_Effective_YMD"
+
+$ purchaser_Claim_Description = "Purchaser_Claim_Description"
+
+$ purchaser_Remedy_Description = "Purchaser_Remedy_Description"
+
+$ sign_Place = "sign_Party_Place"
+
+$ sign_Date = "sign_Party_Date"
+
+$ sign_Signature = "...please sign here..."
+
+// Files called
+
+$ seller = [yarn://cmacc-lib-us/_entity.cmacc]
+
+$ seller_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
+$ seller_NA.entity = seller
+
+$ purchaser = [yarn://cmacc-lib-us/_entity.cmacc]
+
+$ purchaser_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
+$ purchaser_NA.entity = purchaser
+
+
 
 // Document
 
-{{step1}}
+Notice of Claim:
+
+To: {{seller_NA}}, "Seller"
+
+From: {{purchaser_NA}}, "Purchaser"
+
