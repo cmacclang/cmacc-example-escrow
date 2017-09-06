@@ -43,16 +43,16 @@ $ shipper = [yarn://cmacc-lib-us/_entity.cmacc]
 $ seller_NEA = [yarn://cmacc-lib-us/_entity_NEA.cmacc]
 $ seller_NEA.entity = seller
 
-$ purchaser_NEA = [yarn:/cmacc-lib-us/_entity_NEA.cmacc]
+$ purchaser_NEA = [yarn://macc-lib-us/_entity_NEA.cmacc]
 $ purchaser_NEA.entity = purchaser
 
-$ escrow_NEA = [yarn:/cmacc-lib-us/_entity_NEA.cmacc]
+$ escrow_NEA = [yarn://macc-lib-us/_entity_NEA.cmacc]
 $ escrow_NEA.entity = escrow
 
-$ shipper_NEA = [yarn:/cmacc-lib-us/_entity_NEA.cmacc]
+$ shipper_NEA = [yarn://macc-lib-us/_entity_NEA.cmacc]
 $ shipper_NEA.entity = shipper
 
-$ arbitrator_NEA = [yarn:/cmacc-lib-us/_entity_NEA.cmacc]
+$ arbitrator_NEA = [yarn://macc-lib-us/_entity_NEA.cmacc]
 $ arbitrator_NEA.entity = arbitrator
 
 // Document

@@ -1,4 +1,4 @@
-$ seller = [yarn:/cmacc-lib-us/_entity.cmacc]
+$ seller = [yarn://macc-lib-us/_entity.cmacc]
 
 $ seller_Counter_Proposal = "Seller_Counterproposal"
 

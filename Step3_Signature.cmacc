@@ -20,7 +20,7 @@ $ ordered = [./Step2_Order.cmacc]
 
 $ deal = ordered.order.deal
 
-$ sign_Block = [yarn:/cmacc-lib-us/_sign4.cmacc]
+$ sign_Block = [yarn://macc-lib-us/_sign4.cmacc]
 $ sign_Block.party1 = deal.seller
 $ sign_Block.party2 = deal.purchaser
 $ sign_Block.party3 = deal.escrow
