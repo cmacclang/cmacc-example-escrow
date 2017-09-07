@@ -13,5 +13,6 @@
     "cmacc-lib-id": "2.0.1",
     "cmacc-lib-lang": "2.0.3",
     "cmacc-lib-us": "2.0.4"
-  }
+  },
+  "test": "node test.js"
 }
