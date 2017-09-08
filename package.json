@@ -14,11 +14,24 @@
     "cmacc-lib-lang": "2.0.3",
     "cmacc-lib-us": "2.0.4"
   },
-  "resolutions": {
-    "cmacc-lib-lang": "2.0.3",
-    "cmacc-lib-geo": "2.0.3"
+  "devDependencies": {
+    "cmacc-compiler": "^2.0.20",
+    "mocha": "3.5.0",
+    "node-fetch": "^1.7.3"
   },
   "scripts": {
-    "test": "node test.js"
+    "test": "mocha test.js"
+  },
+  "resolutions": {
+    "cmacc-example-geo": "2.0.1",
+    "cmacc-example-id": "2.0.4",
+    "cmacc-lib-lang": "2.0.3",
+    "cmacc-lib-geo": "2.0.3",
+    "kind-of": "4.0.0",
+    "is-number": "3.0.0",
+    "argparse": "1.0.9",
+    "caseless": "0.12.0",
+    "qs": "6.4.0",
+    "assert-plus": "1.0.0"
   }
 }
