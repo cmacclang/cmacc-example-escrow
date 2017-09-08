@@ -1,12 +1,12 @@
 $ seller = [yarn://cmacc-lib-us/_entity.cmacc]
 
-$ Seller_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
-$ Seller_NA.entity = seller
+$ seller_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
+$ seller_NA.entity = seller
 
 $ purchaser = [yarn://cmacc-lib-us/_entity.cmacc]
 
-$ Purchaser_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
-$ Purchaser_NA.entity = purchaser
+$ purchaser_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
+$ purchaser_NA.entity = purchaser
 
 $ escrow = [yarn://cmacc-lib-us/_entity.cmacc]
 
@@ -28,8 +28,8 @@ $ sign_Place = "sign_Party_Place"
 $ sign_Date = "sign_Party_Date"
 
 $ sign_Party = [yarn://cmacc-lib-us/_sign.cmacc]
-$ sign_Party.role = "Seller"
-$ sign_Party.person = seller.sign_Rep
+$ sign_Party.sign_Rep_Title = "Seller"
+$ sign_Party.sign_Rep = seller.sign_Rep
 $ sign_Party.sign_Place = sign_Place
 $ sign_Party.sign_Date = sign_Date
 
@@ -49,9 +49,9 @@ Claim Date: {{claim_YMD}}
 
 Re: Claim
 	
-{{purchaser.formal_Name}}
+{{purchaser.full_Name}}
 
-Thank you for your Notice of Claim.  {{seller.pron.IWe}} greatly regret that you had a problem with our shipment of {{product_Description}} 
+Thank you for your Notice of Claim. {seller.pron.i_We} greatly regret that you had a problem with our shipment of {{product_Description}} 
 
 Thank you also for your offer to settle this matter by: {{purchaser_Remedy_Description}}  
 

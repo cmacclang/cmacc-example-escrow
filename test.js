@@ -94,4 +94,45 @@ describe('helpers_definition_ref_in_def', function () {
   });
 
 
+  it('Step4_Claim', function (done, opts) {
+    const file = url.join('file://', __dirname, './Step4_Claim.cmacc');
+
+    cmacc.compile(file)
+      .then(ast => {
+
+        assert.equal(ast.deal.seller.full_Name, "Gerry's Grapes, LLC");
+        assert.equal(ast.deal.purchaser.full_Name, "{{individual.first_Name}} {{individual.last_Name}}");
+        assert.equal(ast.deal.escrow.full_Name, "Safe Hands Facilitated Transactions, Inc.");
+        assert.equal(ast.deal.arbitrator.full_Name, "{{individual.first_Name}} {{individual.last_Name}}");
+        assert.equal(ast.deal.shipper.full_Name, "Fabulous Express, Inc.");
+
+        assert.equal(ast.deal.product_Description, "eighteen cases of grape preserves");
+        assert.equal(ast.deal.escrow_Effective_YMD, "2014-08-13");
+
+        done();
+      })
+      .catch(done);
+
+  });
+
+  it('Step5_Response', function (done, opts) {
+    const file = url.join('file://', __dirname, './Step5_Response.cmacc');
+
+    cmacc.compile(file)
+      .then(ast => {
+
+        assert.equal(ast.response.seller.full_Name, "Gerry's Grapes, LLC");
+        assert.equal(ast.response.purchaser.full_Name, "{{individual.first_Name}} {{individual.last_Name}}");
+        assert.equal(ast.response.escrow.full_Name, "Safe Hands Facilitated Transactions, Inc.");
+
+        assert.equal(ast.response.claim_YMD, "2014-08-16");
+
+        done();
+
+      })
+      .catch(done);
+
+  });
+
+
 });

@@ -14,13 +14,13 @@ $ sign_Date = "2014-08-16"
 
 $ purchaser_Signature = "xRoberta"
 
+$ sign_Place = "sign_Place"
+
 // Data binding
 
 $ signed = [./Step3_Signature.cmacc]
 
-$ deal = signed.ordered.order.deal
-
-$ sign_Place = deal.purchaser.adr.street.city.name
+$ deal = signed.deal
 
 $ claim = [./Claim.cmacc]
 
