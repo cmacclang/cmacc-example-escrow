@@ -82,6 +82,11 @@ describe('helpers_definition_ref_in_def', function () {
         assert.equal(ast.deal.arbitrator.full_Name, "{{individual.first_Name}} {{individual.last_Name}}");
         assert.equal(ast.deal.shipper.full_Name, "Fabulous Express, Inc.");
 
+        assert.equal(ast.sign_Block.party1.sign_Rep.first_Name, "Geraldine");
+        assert.equal(ast.sign_Block.party2.sign_Rep.first_Name, "Roberta");
+        assert.equal(ast.sign_Block.party3.sign_Rep.first_Name, "Samuel");
+        assert.equal(ast.sign_Block.party4.sign_Rep.first_Name, "Solomon");
+
         done();
       })
       .catch(done);

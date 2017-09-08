@@ -36,7 +36,7 @@ $ sign_Block.sign_Party1_Signature = seller_Signature
 
 $ sign_Block.party2.sign_Rep = deal.purchaser.sign_Rep
 $ sign_Block.party2.sign_Rep_Title = deal.purchaser.sign_Rep_Title
-$ sign_Block.sign_Party2_Place = deal.purchaser.adr.street.city.name
+$ sign_Block.sign_Party2_Place = deal.seller.adr.street.city.name
 $ sign_Block.sign_Party2_Date = purchaser_Sign_YMD
 $ sign_Block.sign_Party2_Signature = purchaser_Signature
 
