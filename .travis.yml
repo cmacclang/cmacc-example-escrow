@@ -4,7 +4,7 @@ node_js:
 before_install:
   - git clone https://github.com/cmacclang/cmacc-compiler.git
   - cd cmacc-compiler
-  - npm install cmacc-compiler
+  - npm install cmacc-compiler -g
   - yarn link
   - cd ..
 after_success:
