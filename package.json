@@ -15,7 +15,8 @@
     "cmacc-lib-us": "2.0.4"
   },
   "resolutions": {
-    "cmacc-lib-lang": "2.0.3"
+    "cmacc-lib-lang": "2.0.3",
+    "cmacc-lib-geo": "2.0.3"
   },
   "scripts": {
     "test": "node test.js"
