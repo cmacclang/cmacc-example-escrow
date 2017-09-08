@@ -16,7 +16,8 @@
   },
   "devDependencies": {
     "cmacc-compiler": "^2.0.20",
-    "mocha": "3.5.0"
+    "mocha": "3.5.0",
+    "node-fetch": "^1.7.3"
   },
   "scripts": {
     "test": "mocha test.js"
