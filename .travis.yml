@@ -2,7 +2,7 @@ language: node_js
 node_js: 
   - "6.3.1"
 before_install:
-  - git clone git@github.com:cmacclang/cmacc-compiler.git
+  - git clone https://github.com/cmacclang/cmacc-compiler.git
   - cd cmacc-compiler
   - npm install cmacc-compiler -g
   - cd ..
