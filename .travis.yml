@@ -7,5 +7,5 @@ before_install:
   - npm install cmacc-compiler
   - yarn link
   - cd ..
-after_script:
+after_success:
   - yarn link cmacc-compiler
