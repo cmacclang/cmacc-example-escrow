@@ -102,9 +102,9 @@ caseless@~0.11.0, caseless@~0.12.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
 
-cmacc-compiler@^2.0.20:
-  version "2.0.20"
-  resolved "https://registry.yarnpkg.com/cmacc-compiler/-/cmacc-compiler-2.0.20.tgz#cf5e67ed6bfc2d74553aebc72aec5adcb4850180"
+cmacc-compiler@^2.0.23:
+  version "2.0.23"
+  resolved "https://registry.yarnpkg.com/cmacc-compiler/-/cmacc-compiler-2.0.23.tgz#80796a67ea364b998b27d209801476f11cb11c23"
   dependencies:
     async "^2.0.1"
     cmacc-example-helloworld "github:cmacclang/cmacc-example-helloworld"
@@ -150,9 +150,9 @@ cmacc-lib-lang@2.0.3, "cmacc-lib-lang@github:cmacclang/cmacc-lib-lang":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/cmacc-lib-lang/-/cmacc-lib-lang-2.0.3.tgz#e7509c9b33481b3a810b1845b30fc925e1f3103c"
 
-cmacc-lib-us@2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/cmacc-lib-us/-/cmacc-lib-us-2.0.4.tgz#6123577fee1484b14f202197ed4a1e1ae5f85f10"
+cmacc-lib-us@2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/cmacc-lib-us/-/cmacc-lib-us-2.0.5.tgz#0067a5cc2403416c03a2824f2a5c5d26a4b4e9cb"
   dependencies:
     cmacc-lib-geo "2.0.3"
     cmacc-lib-id "2.0.1"
