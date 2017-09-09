@@ -2,4 +2,4 @@ $ seller = [yarn://cmacc-lib-us/_entity.cmacc]
 
 $ seller_Counter_Proposal = "Seller_Counterproposal"
 
-{{seller.pron.IWe}} would like to propose that instead of your offer, {{seller.pron.Iwe}} will {{seller_Counter_Proposal}}  
+{{seller.pron.I_We}} would like to propose that instead of your offer, {{seller.pron.I_we}} will {{seller_Counter_Proposal}}  
