@@ -12,7 +12,7 @@
     "cmacc-example-id": "2.0.4",
     "cmacc-lib-id": "2.0.1",
     "cmacc-lib-lang": "2.0.3",
-    "cmacc-lib-us": "2.0.5"
+    "cmacc-lib-us": "2.0.6"
   },
   "devDependencies": {
     "cmacc-compiler": "^2.0.23",
