@@ -1,17 +1,12 @@
-$ seller = [yarn://cmacc-lib-us/_entity.cmacc]
+// Parties
 
-$ seller_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
-$ seller_NA.entity = seller
+$ seller = [yarn://cmacc-lib-us/_entity.cmacc]
 
 $ purchaser = [yarn://cmacc-lib-us/_entity.cmacc]
 
-$ purchaser_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
-$ purchaser_NA.entity = purchaser
-
 $ escrow = [yarn://cmacc-lib-us/_entity.cmacc]
 
-$ escrow_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
-$ escrow_NA.entity = escrow
+// Parameters
 
 $ claim_YMD = "Claim_YMD"
 
@@ -27,13 +22,30 @@ $ sign_Place = "sign_Party_Place"
 
 $ sign_Date = "sign_Party_Date"
 
+$ seller_Signature = "xSignature"
+
+// Masks
+
+
+$ seller_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
+$ seller_NA.entity = seller
+
+$ purchaser_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
+$ purchaser_NA.entity = purchaser
+
+$ escrow_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
+$ escrow_NA.entity = escrow
+
+// Data binding
+
 $ sign_Party = [yarn://cmacc-lib-us/_sign.cmacc]
 $ sign_Party.sign_Rep_Title = "Seller"
 $ sign_Party.sign_Rep = seller.sign_Rep
 $ sign_Party.sign_Place = sign_Place
 $ sign_Party.sign_Date = sign_Date
+$ sign_Party.sign_Signature = seller_Signature
 
-// Document
+// Content
 
 Seller's Response to Notice of Claim:
 
@@ -51,7 +63,7 @@ Re: Claim
 	
 {{purchaser.full_Name}}
 
-Thank you for your Notice of Claim. {seller.pron.i_We} greatly regret that you had a problem with our shipment of {{product_Description}} 
+Thank you for your Notice of Claim. {{seller.pron.I_We}} greatly regret that you had a problem with our shipment of {{product_Description}} 
 
 Thank you also for your offer to settle this matter by: {{purchaser_Remedy_Description}}  
 

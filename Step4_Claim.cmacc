@@ -14,8 +14,6 @@ $ sign_Date = "2014-08-16"
 
 $ purchaser_Signature = "xRoberta"
 
-$ sign_Place = "sign_Place"
-
 // Data binding
 
 $ signed = [./Step3_Signature.cmacc]
@@ -35,7 +33,7 @@ $ claim.product_Description = deal.product_Description
 $ claim.escrow_Effective_YMD = deal.escrow_Effective_YMD
 $ claim.purchaser_Claim_Description = purchaser_Claim_Description
 $ claim.purchaser_Remedy_Description = purchaser_Remedy_Description
-$ claim.sign_Place = sign_Place
+$ claim.sign_Place = deal.purchaser.adr.street.city.name
 $ claim.sign_Date = sign_Date
 $ claim.sign_Signature = purchaser_Signature
 

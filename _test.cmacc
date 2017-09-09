@@ -1,46 +1,21 @@
-// Parameters
+// External files
 
-$ seller_Claim_Response_Delay = "two business days"
+$ accept_Reject = [./ResponseAccept.cmacc]
 
-$ claim_YMD = "Claim_YMD"
+$ response = [./Response.cmacc]
 
-$ delivery_YMD = "Delivery_YMD"
+$ claim = [./Step4_Claim.cmacc]
 
-$ parcel_Num = "Parcel_num"
+// Data binding
 
-$ product_Description = "Product_Description"
+$ deal = claim.signed.ordered.order.deal
 
-$ escrow_Effective_YMD = "Escrow_Effective_YMD"
+$ deal.seller.pron = deal.seller.pron_EN
 
-$ purchaser_Claim_Description = "Purchaser_Claim_Description"
+$ accept_Reject.seller.pron = deal.seller.pron
 
-$ purchaser_Remedy_Description = "Purchaser_Remedy_Description"
-
-$ sign_Place = "sign_Party_Place"
-
-$ sign_Date = "sign_Party_Date"
-
-$ sign_Signature = "...please sign here..."
-
-// Files called
-
-$ seller = [yarn://cmacc-lib-us/_entity.cmacc]
-
-$ seller_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
-$ seller_NA.entity = seller
-
-$ purchaser = [yarn://cmacc-lib-us/_entity.cmacc]
-
-$ purchaser_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
-$ purchaser_NA.entity = purchaser
-
-
+$ test_value = deal.seller.pron
 
 // Document
 
-Notice of Claim:
-
-To: {{seller_NA}}, "Seller"
-
-From: {{purchaser_NA}}, "Purchaser"
-
+{{test_value.I_We}}

@@ -55,7 +55,7 @@ $ shipper_NEA.entity = shipper
 $ arbitrator_NEA = [yarn://cmacc-lib-us/_entity_NEA.cmacc]
 $ arbitrator_NEA.entity = arbitrator
 
-// Document
+// Content
 
 ESCROW AGREEMENT
 
