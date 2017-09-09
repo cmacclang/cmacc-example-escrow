@@ -1,18 +1,36 @@
-$ claim = [./Step4_Claim.cmacc]
+// Parameters
+
+$ seller_Signature = "xGerryGrapes"
+
+// External files
 
 $ accept_Reject = [./ResponseAccept.cmacc]
 
 $ response = [./Response.cmacc]
-$ response.seller = claim.claim.seller
-$ response.purchaser = claim.claim.purchaser
-$ response.escrow = claim.claim.escrow
-$ response.claim_YMD = claim.claim.claim_YMD
+
+$ claim = [./Step4_Claim.cmacc]
+
+// Data binding
+
+$ deal = claim.signed.ordered.order.deal
+
+$ deal.seller.pron = deal.seller.pron_EN
+
+$ accept_Reject.seller.pron = deal.seller.pron
+
+
+$ response.seller = deal.seller
+$ response.purchaser = deal.purchaser
+$ response.escrow = deal.escrow
+$ response.claim_YMD = claim.claim_YMD
+
 $ response.response_YMD = "2014-08-17:12:01"
-$ response.product_Description = claim.claim.product_Description
-$ response.purchaser_Remedy_Description = claim.claim.purchaser_Remedy_Description
+$ response.product_Description = deal.product_Description
+$ response.purchaser_Remedy_Description = claim.purchaser_Remedy_Description
 $ response.accept_Reject = accept_Reject
-$ response.sign_Place = claim.claim.seller.adr.street.city.name
+$ response.sign_Place = deal.seller.adr.street.city.name
 $ response.sign_Date = "2014-08-17"
+$ response.seller_Signature = seller_Signature
 
 // Document
 

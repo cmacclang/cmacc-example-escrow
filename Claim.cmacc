@@ -1,5 +1,7 @@
 // Parameters
 
+$ seller_Claim_Response_Delay = "two business days"
+
 $ claim_YMD = "Claim_YMD"
 
 $ delivery_YMD = "Delivery_YMD"
@@ -12,13 +14,13 @@ $ escrow_Effective_YMD = "Escrow_Effective_YMD"
 
 $ purchaser_Claim_Description = "Purchaser_Claim_Description"
 
-$ seller_Claim_Response_Delay = "Seller_Claim_Response_Delay"
-
 $ purchaser_Remedy_Description = "Purchaser_Remedy_Description"
 
 $ sign_Place = "sign_Party_Place"
 
 $ sign_Date = "sign_Party_Date"
+
+$ sign_Signature = "...please sign here..."
 
 // Files called
 
@@ -30,7 +32,7 @@ $ seller_NA.entity = seller
 $ purchaser = [yarn://cmacc-lib-us/_entity.cmacc]
 
 $ purchaser_NA = [yarn://cmacc-lib-us/_entity_NA.cmacc]
-$ purchaser_NA.entity" : purchaser
+$ purchaser_NA.entity = purchaser
 
 $ escrow = [yarn://cmacc-lib-us/_entity.cmacc]
 
@@ -39,11 +41,15 @@ $ escrow_NA.entity = escrow
 
 $ shipper = [yarn://cmacc-lib-us/_entity.cmacc]
 
+// Data binding
+
 $ sign_Party = [yarn://cmacc-lib-us/_sign.cmacc]
-$ sign_Party.role = "Purchaser"
-$ sign_Party.person = purchaser.sign_Rep
+
+$ sign_Party.sign_Rep_Title = purchaser.sign_Rep_Title
+$ sign_Party.sign_Rep = purchaser.sign_Rep
 $ sign_Party.sign_Place = sign_Place
 $ sign_Party.sign_Date = sign_Date
+$ sign_Party.sign_Signature = sign_Signature
 
 // Document
 
@@ -62,7 +68,7 @@ Re: Claim
 
 Dear {{seller.formal_Name}}:
 
-This will inform you that on {{delivery_YMD}}, {{shipper.name_Full}} delivered package {{parcel_Num}} to {{purchaser.pron.meus}}. The contents were sent by you and described as:
+This will inform you that on {{delivery_YMD}}, {{shipper.full_Name}} delivered package {{parcel_Num}} to {{purchaser.pron.meus}}. The contents were sent by you and described as:
 
 {{product_Description}}.
 

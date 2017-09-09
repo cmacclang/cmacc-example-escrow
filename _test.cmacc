@@ -1,22 +1,21 @@
-$ product_Description = "eighteen cases of grape preserves"
+// External files
 
-$ price_USD = "$650.00"
+$ accept_Reject = [./ResponseAccept.cmacc]
 
-$ pickup_Time_Max = "2014-08-15"
+$ response = [./Response.cmacc]
 
-$ escrow_Sign_YMD = "2014-08-13"
+$ claim = [./Step4_Claim.cmacc]
 
-$ escrow_Effective_YMD = "2014-08-13"
+// Data binding
 
-$ step1 = [./Step1_Parties.cmacc]
-$ step2 = step1.deal
+$ deal = claim.signed.ordered.order.deal
 
-$ step2.pickup_Time_Max = pickup_Time_Max
-$ step2.price_USD = price_USD
-$ step2.escrow_Sign_YMD = escrow_Sign_YMD
-$ step2.escrow_Effective_YMD = escrow_Effective_YMD
-$ step2.product_Description = product_Description
+$ deal.seller.pron = deal.seller.pron_EN
+
+$ accept_Reject.seller.pron = deal.seller.pron
+
+$ test_value = deal.seller.pron
 
 // Document
 
-{{step1}}
+{{test_value.I_We}}

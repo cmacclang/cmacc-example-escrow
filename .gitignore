@@ -1,4 +1,5 @@
 /node_modules
 *.html
+*.log
 yarn.lock
 package-lock.json

@@ -1,22 +1,41 @@
-$ shipper = [yarn://cmacc-example-id/FabulousExpressInc.cmacc]
+// Parameters
+
+$ claim_YMD = "2014-08-16"
+
+$ delivery_YMD = "2014-08-15"
+
+$ parcel_Num = "S-98765"
+
+$ purchaser_Claim_Description = "Three cases were of the wrong type and one case had three broken jars that leaked on the packaging."
+
+$ purchaser_Remedy_Description = "Two new cases of grape preserves."
+
+$ sign_Date = "2014-08-16"
+
+$ purchaser_Signature = "xRoberta"
+
+// Data binding
 
 $ signed = [./Step3_Signature.cmacc]
 
+$ deal = signed.ordered.order.deal
+
 $ claim = [./Claim.cmacc]
-$ claim.seller = signed.ordered.order.seller
-$ claim.purchaser = signed.ordered.order.purchaser
-$ claim.escrow = signed.ordered.order.escrow
-$ claim.shipper = shipper
-$ claim.claim_YMD = "2014-08-16"
-$ claim.delivery_YMD = "2014-08-15"
-$ claim.parcel_num = "S-98765"
-$ claim.product_Description = signed.ordered.product_Description
-$ claim.escrow_Effective_YMD = signed.ordered.escrow_Effective_YMD
-$ claim.purchaser_Claim_Description = "Three cases were of the wrong type and one case had three broken jars that leaked on the packaging."
-$ claim.seller_Claim_Response_Delay = "two business days"
-$ claim.purchaser_Remedy_Description = "Two new cases of grape preserves."
-$ claim.sign_Place = signed.ordered.roberta_robinson.adr.street.city.name
-$ claim.sign_Date = "2014-08-16"
+
+$ claim.seller = deal.seller
+$ claim.purchaser = deal.purchaser
+$ claim.escrow = deal.escrow
+$ claim.shipper = deal.shipper
+$ claim.claim_YMD = claim_YMD
+$ claim.delivery_YMD = delivery_YMD
+$ claim.parcel_Num = parcel_Num
+$ claim.product_Description = deal.product_Description
+$ claim.escrow_Effective_YMD = deal.escrow_Effective_YMD
+$ claim.purchaser_Claim_Description = purchaser_Claim_Description
+$ claim.purchaser_Remedy_Description = purchaser_Remedy_Description
+$ claim.sign_Place = deal.purchaser.adr.street.city.name
+$ claim.sign_Date = sign_Date
+$ claim.sign_Signature = purchaser_Signature
 
 // Document
 
