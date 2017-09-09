@@ -20,7 +20,7 @@ $ sign_Place = "sign_Place"
 
 $ signed = [./Step3_Signature.cmacc]
 
-$ deal = signed.deal
+$ deal = signed.ordered.order.deal
 
 $ claim = [./Claim.cmacc]
 
