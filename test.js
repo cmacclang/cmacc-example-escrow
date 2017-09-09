@@ -116,6 +116,9 @@ describe('helpers_definition_ref_in_def', function () {
   });
 
   it('Step5_Response', function (done, opts) {
+
+    this.timeout(5000);
+
     const file = url.join('file://', __dirname, './Step5_Response.cmacc');
 
     cmacc.compile(file)
