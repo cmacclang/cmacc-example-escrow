@@ -68,16 +68,16 @@ Re: Claim
 
 Dear {{seller.formal_Name}}:
 
-This will inform you that on {{delivery_YMD}}, {{shipper.full_Name}} delivered package {{parcel_Num}} to {{purchaser.pron.meus}}. The contents were sent by you and described as:
+This will inform you that on {{delivery_YMD}}, {{shipper.full_Name}} delivered package {{parcel_Num}} to {{purchaser.pron.me_us}}. The contents were sent by you and described as:
 
 {{product_Description}}.
 
-This notifies you and the Escrow Agent under the terms of our Escrow Agreement dated {{escrow_Effective_YMD}} of {{purchaser.pron.myour}} "Claim."
+This notifies you and the Escrow Agent under the terms of our Escrow Agreement dated {{escrow_Effective_YMD}} of {{purchaser.pron.my_our}} "Claim."
 
 The Claim is:
 {{purchaser_Claim_Description}}
 
-{{purchaser.pron.Iwe}} would appreciate it if you would remedy this problem by:
+{{purchaser.pron.I_we}} would appreciate it if you would remedy this problem by:
 
 {{purchaser_Remedy_Description}}
 

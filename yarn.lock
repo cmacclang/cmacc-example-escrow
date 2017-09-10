@@ -146,13 +146,13 @@ cmacc-lib-id@2.0.1:
     cmacc-lib-geo cmacclang/cmacc-lib-geo
     cmacc-lib-lang cmacclang/cmacc-lib-lang
 
-cmacc-lib-lang@2.0.4, cmacc-lib-lang@cmacclang/cmacc-lib-lang:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/cmacc-lib-lang/-/cmacc-lib-lang-2.0.4.tgz#61cbebedee3ae827ff0497914bd022583c26f348"
+cmacc-lib-lang@2.0.4, cmacc-lib-lang@2.0.5, cmacc-lib-lang@cmacclang/cmacc-lib-lang:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/cmacc-lib-lang/-/cmacc-lib-lang-2.0.5.tgz#42ced1bf7da2e1d908be48f94972e294bf0eccd5"
 
-cmacc-lib-us@2.0.8:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/cmacc-lib-us/-/cmacc-lib-us-2.0.8.tgz#514f5aa86e987804d8b882652ffe2c791a32bf86"
+cmacc-lib-us@2.0.9:
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/cmacc-lib-us/-/cmacc-lib-us-2.0.9.tgz#b8134aed8007a58631b5eb95c4976f667af3db93"
   dependencies:
     cmacc-lib-geo "2.0.3"
     cmacc-lib-id "2.0.1"
