@@ -1,6 +1,6 @@
 {
   "name": "cmacc-example-escrow",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Escrow example - flowing through various steps ",
   "main": "index.js",
   "repository": "https://github.com/cmacclang/cmacc-example-escrow.git",
