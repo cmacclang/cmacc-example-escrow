@@ -14,22 +14,22 @@ Feature: Escrow
     Then it contains the following variables and values:
       | seller.full_Name          | Gerry's Grapes, LLC                                |
       | escrow.full_Name          | Safe Hands Facilitated Transactions, Inc.          |
-      | arbitrator.full_Name      | {{individual.first_Name}} {{individual.last_Name}} |
+      | arbitrator.full_Name      | {{first_Name}} {{last_Name}} |
       | shipper.full_Name         | Fabulous Express, Inc.                             |
       | deal.seller.full_Name     | Gerry's Grapes, LLC                                |
       | deal.purchaser.full_Name  | name_Full                                          |
       | deal.escrow.full_Name     | Safe Hands Facilitated Transactions, Inc.          |
-      | deal.arbitrator.full_Name | {{individual.first_Name}} {{individual.last_Name}} |
+      | deal.arbitrator.full_Name | {{first_Name}} {{last_Name}} |
       | deal.shipper.full_Name    | Fabulous Express, Inc.                             |
 
   Scenario: Step2_Order
     Given I compile "Step2_Order.cmacc"
     Then it contains the following variables and values:
-      | purchaser.full_Name       | {{individual.first_Name}} {{individual.last_Name}} |
+      | purchaser.full_Name       | {{first_Name}} {{last_Name}} |
       | deal.seller.full_Name     | Gerry's Grapes, LLC                                |
-      | deal.purchaser.full_Name  | {{individual.first_Name}} {{individual.last_Name}} |
+      | deal.purchaser.full_Name  | {{first_Name}} {{last_Name}} |
       | deal.escrow.full_Name     | Safe Hands Facilitated Transactions, Inc.          |
-      | deal.arbitrator.full_Name | {{individual.first_Name}} {{individual.last_Name}} |
+      | deal.arbitrator.full_Name | {{first_Name}} {{last_Name}} |
       | deal.shipper.full_Name    | Fabulous Express, Inc.                             |
 
   Scenario: Step3_Signature
@@ -44,7 +44,7 @@ Feature: Escrow
     Given I compile "Step4_Claim.cmacc"
     Then it contains the following variables and values:
       | claim.seller.full_Name     | Gerry's Grapes, LLC                                |
-      | claim.purchaser.full_Name  | {{individual.first_Name}} {{individual.last_Name}} |
+      | claim.purchaser.full_Name  | {{first_Name}} {{last_Name}} |
       | claim.escrow.full_Name     | Safe Hands Facilitated Transactions, Inc.          |
       | claim.shipper.full_Name    | Fabulous Express, Inc.                             |
       | claim.product_Description  | eighteen cases of grape preserves                  |
@@ -54,6 +54,6 @@ Feature: Escrow
     Given I compile "Step5_Response.cmacc"
     Then it contains the following variables and values:
       | response.seller.full_Name    | Gerry's Grapes, LLC                                |
-      | response.purchaser.full_Name | {{individual.first_Name}} {{individual.last_Name}} |
+      | response.purchaser.full_Name | {{first_Name}} {{last_Name}} |
       | response.escrow.full_Name    | Safe Hands Facilitated Transactions, Inc.          |
       | response.claim_YMD           | 2014-08-16                                         |
