@@ -110,7 +110,7 @@
               }
             ]
           },
-          "dataSrc": "resource",
+          "dataSrc": "value",
           "valueProperty": "",
           "defaultValue": "",
           "refreshOn": "",
@@ -173,7 +173,7 @@
               }
             ]
           },
-          "dataSrc": "resource",
+          "dataSrc": "value",
           "valueProperty": "",
           "defaultValue": "",
           "refreshOn": "",
@@ -234,7 +234,7 @@
               }
             ]
           },
-          "dataSrc": "resource",
+          "dataSrc": "value",
           "valueProperty": "",
           "defaultValue": "",
           "refreshOn": "",
@@ -297,7 +297,7 @@
               }
             ]
           },
-          "dataSrc": "resource",
+          "dataSrc": "value",
           "valueProperty": "",
           "defaultValue": "",
           "refreshOn": "",
