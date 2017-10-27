@@ -58,12 +58,16 @@
             "json": "",
             "values": [
               {
-                "label": "test1",
-                "value": "test1"
+                "label": "Fabulous Express Inc.",
+                "value": "[yarn://cmacc-example-id/FabulousExpressInc.cmacc]"
               },
               {
-                "label": "test2",
-                "value": "test2"
+                "label": "Safe Hands Inc.",
+                "value": "[yarn://cmacc-example-id/SafeHandsInc.cmacc]"
+              },
+              {
+                "label": "Gerrys Grapes LLC",
+                "value": "[yarn://cmacc-example-id/GerrysGrapesLLC.cmacc]"
               }
             ]
           },
@@ -80,17 +84,31 @@
           "key": "purchaser",
           "placeholder": "",
           "data": {
-            "values": [
+            "project": "59c8b0f44cbbd000077d74f7",
+            "headers": [
               {
-                "value": "",
-                "label": ""
+                "key": "",
+                "value": ""
               }
             ],
-            "json": "",
-            "url": "",
-            "resource": "59c8b2f8d6d99500071b2d8b",
             "custom": "",
-            "project": "59c8b0f44cbbd000077d74f7"
+            "resource": "59c8b2f8d6d99500071b2d8b",
+            "url": "",
+            "json": "",
+            "values": [
+              {
+                "label": "Fabulous Express Inc.",
+                "value": "[yarn://cmacc-example-id/FabulousExpressInc.cmacc]"
+              },
+              {
+                "label": "Safe Hands Inc.",
+                "value": "[yarn://cmacc-example-id/SafeHandsInc.cmacc]"
+              },
+              {
+                "label": "Gerrys Grapes LLC",
+                "value": "[yarn://cmacc-example-id/GerrysGrapesLLC.cmacc]"
+              }
+            ]
           },
           "dataSrc": "resource",
           "valueProperty": "",
@@ -129,17 +147,31 @@
           "key": "escrow",
           "placeholder": "",
           "data": {
-            "values": [
+            "project": "59c8b0f44cbbd000077d74f7",
+            "headers": [
               {
-                "value": "",
-                "label": ""
+                "key": "",
+                "value": ""
               }
             ],
-            "json": "",
-            "url": "",
-            "resource": "59c8b2f8d6d99500071b2d8b",
             "custom": "",
-            "project": "59c8b0f44cbbd000077d74f7"
+            "resource": "59c8b2f8d6d99500071b2d8b",
+            "url": "",
+            "json": "",
+            "values": [
+              {
+                "label": "Fabulous Express Inc.",
+                "value": "[yarn://cmacc-example-id/FabulousExpressInc.cmacc]"
+              },
+              {
+                "label": "Safe Hands Inc.",
+                "value": "[yarn://cmacc-example-id/SafeHandsInc.cmacc]"
+              },
+              {
+                "label": "Gerrys Grapes LLC",
+                "value": "[yarn://cmacc-example-id/GerrysGrapesLLC.cmacc]"
+              }
+            ]
           },
           "dataSrc": "resource",
           "valueProperty": "",
@@ -176,17 +208,31 @@
           "key": "arbitrator",
           "placeholder": "",
           "data": {
-            "values": [
+            "project": "59c8b0f44cbbd000077d74f7",
+            "headers": [
               {
-                "value": "",
-                "label": ""
+                "key": "",
+                "value": ""
               }
             ],
-            "json": "",
-            "url": "",
-            "resource": "59c8b2f8d6d99500071b2d8b",
             "custom": "",
-            "project": "59c8b0f44cbbd000077d74f7"
+            "resource": "59c8b2f8d6d99500071b2d8b",
+            "url": "",
+            "json": "",
+            "values": [
+              {
+                "label": "Fabulous Express Inc.",
+                "value": "[yarn://cmacc-example-id/FabulousExpressInc.cmacc]"
+              },
+              {
+                "label": "Safe Hands Inc.",
+                "value": "[yarn://cmacc-example-id/SafeHandsInc.cmacc]"
+              },
+              {
+                "label": "Gerrys Grapes LLC",
+                "value": "[yarn://cmacc-example-id/GerrysGrapesLLC.cmacc]"
+              }
+            ]
           },
           "dataSrc": "resource",
           "valueProperty": "",
@@ -225,17 +271,31 @@
           "key": "shipper",
           "placeholder": "",
           "data": {
-            "values": [
+            "project": "59c8b0f44cbbd000077d74f7",
+            "headers": [
               {
-                "value": "",
-                "label": ""
+                "key": "",
+                "value": ""
               }
             ],
-            "json": "",
-            "url": "",
-            "resource": "59c8b2f8d6d99500071b2d8b",
             "custom": "",
-            "project": "59c8b0f44cbbd000077d74f7"
+            "resource": "59c8b2f8d6d99500071b2d8b",
+            "url": "",
+            "json": "",
+            "values": [
+              {
+                "label": "Fabulous Express Inc.",
+                "value": "[yarn://cmacc-example-id/FabulousExpressInc.cmacc]"
+              },
+              {
+                "label": "Safe Hands Inc.",
+                "value": "[yarn://cmacc-example-id/SafeHandsInc.cmacc]"
+              },
+              {
+                "label": "Gerrys Grapes LLC",
+                "value": "[yarn://cmacc-example-id/GerrysGrapesLLC.cmacc]"
+              }
+            ]
           },
           "dataSrc": "resource",
           "valueProperty": "",
