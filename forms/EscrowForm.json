@@ -1,7 +1,7 @@
 {
   "_id": "59c8b14dd6d99500071b2d86",
   "machineName": "vsoqkxzelfinxcb:cmacc-escrow",
-  "modified": "2017-10-13T14:31:50.225Z",
+  "modified": "2017-10-27T13:04:07.565Z",
   "title": "Cmacc Escrow",
   "display": "wizard",
   "name": "cmacc-escrow",
@@ -10,46 +10,86 @@
   "created": "2017-09-25T07:33:33.351Z",
   "components": [
     {
-      "lockKey": true,
-      "properties": {
-        "": ""
-      },
-      "conditional": {
-        "eq": "",
-        "when": null,
-        "show": ""
-      },
-      "tags": [],
-      "breadcrumb": "default",
-      "type": "panel",
-      "title": "Parties",
+      "tableView": false,
+      "theme": "default",
+      "key": "parties",
+      "input": false,
       "components": [
+        {
+          "isNew": false,
+          "lockKey": true,
+          "properties": {
+            "": ""
+          },
+          "conditional": {
+            "eq": "",
+            "when": null,
+            "show": ""
+          },
+          "tags": [],
+          "type": "select",
+          "validate": {
+            "required": true
+          },
+          "clearOnHide": true,
+          "hidden": false,
+          "persistent": true,
+          "unique": false,
+          "protected": false,
+          "multiple": false,
+          "template": "<span>{{ item.label }}</span>",
+          "authenticate": false,
+          "filter": "",
+          "refreshOn": "",
+          "defaultValue": "",
+          "valueProperty": "",
+          "dataSrc": "values",
+          "data": {
+            "project": "59c8b0f44cbbd000077d74f7",
+            "headers": [
+              {
+                "key": "",
+                "value": ""
+              }
+            ],
+            "custom": "",
+            "resource": "59c8b2f8d6d99500071b2d8b",
+            "url": "",
+            "json": "",
+            "values": [
+              {
+                "label": "test1",
+                "value": "test1"
+              },
+              {
+                "label": "test2",
+                "value": "test2"
+              }
+            ]
+          },
+          "placeholder": "",
+          "key": "seller",
+          "label": "Seller",
+          "tableView": true,
+          "input": true
+        },
         {
           "input": true,
           "tableView": true,
-          "label": "Seller",
-          "key": "seller",
+          "label": "Purchaser",
+          "key": "purchaser",
           "placeholder": "",
           "data": {
             "values": [
               {
-                "value": "test1",
-                "label": "test1"
-              },
-              {
-                "value": "test2",
-                "label": "test2"
+                "value": "",
+                "label": ""
               }
             ],
             "json": "",
             "url": "",
+            "resource": "59c8b2f8d6d99500071b2d8b",
             "custom": "",
-            "headers": [
-              {
-                "value": "",
-                "key": ""
-              }
-            ],
             "project": "59c8b0f44cbbd000077d74f7"
           },
           "dataSrc": "resource",
@@ -78,718 +118,680 @@
           "properties": {
             "": ""
           },
-          "lockKey": true
-        },
-        {
-          "searchField": "",
           "lockKey": true,
-          "properties": {
-            "": ""
-          },
-          "conditional": {
-            "eq": "",
-            "when": null,
-            "show": ""
-          },
-          "tags": [],
-          "type": "select",
-          "validate": {
-            "required": true
-          },
-          "clearOnHide": true,
-          "hidden": false,
-          "persistent": true,
-          "unique": false,
-          "protected": false,
-          "multiple": false,
-          "template": "<span>{{ item.data.name }}</span>",
-          "authenticate": false,
-          "filter": "",
-          "refreshOn": "",
-          "defaultValue": "",
-          "valueProperty": "",
-          "dataSrc": "resource",
-          "data": {
-            "project": "59c8b0f44cbbd000077d74f7",
-            "custom": "",
-            "resource": "59c8b2f8d6d99500071b2d8b",
-            "url": "",
-            "json": "",
-            "values": [
-              {
-                "label": "",
-                "value": ""
-              }
-            ]
-          },
-          "placeholder": "",
-          "key": "purchaser",
-          "label": "Purchaser",
-          "tableView": true,
-          "input": true
+          "searchField": ""
         },
         {
-          "searchField": "",
-          "properties": {
-            "": ""
-          },
-          "conditional": {
-            "eq": "",
-            "when": null,
-            "show": ""
-          },
-          "tags": [],
-          "type": "select",
-          "validate": {
-            "required": true
-          },
-          "clearOnHide": true,
-          "hidden": false,
-          "persistent": true,
-          "unique": false,
-          "protected": false,
-          "multiple": false,
-          "template": "<span>{{ item.data.name }}</span>",
-          "authenticate": false,
-          "filter": "",
-          "refreshOn": "",
-          "defaultValue": "",
-          "valueProperty": "",
-          "dataSrc": "resource",
-          "data": {
-            "project": "59c8b0f44cbbd000077d74f7",
-            "custom": "",
-            "resource": "59c8b2f8d6d99500071b2d8b",
-            "url": "",
-            "json": "",
-            "values": [
-              {
-                "label": "",
-                "value": ""
-              }
-            ]
-          },
-          "placeholder": "",
-          "key": "escrow",
+          "lockKey": true,
+          "input": true,
+          "tableView": true,
           "label": "Escrow",
-          "tableView": true,
-          "input": true,
-          "lockKey": true
-        },
-        {
-          "searchField": "",
-          "lockKey": true,
-          "properties": {
-            "": ""
+          "key": "escrow",
+          "placeholder": "",
+          "data": {
+            "values": [
+              {
+                "value": "",
+                "label": ""
+              }
+            ],
+            "json": "",
+            "url": "",
+            "resource": "59c8b2f8d6d99500071b2d8b",
+            "custom": "",
+            "project": "59c8b0f44cbbd000077d74f7"
           },
-          "conditional": {
-            "eq": "",
-            "when": null,
-            "show": ""
-          },
-          "tags": [],
-          "type": "select",
+          "dataSrc": "resource",
+          "valueProperty": "",
+          "defaultValue": "",
+          "refreshOn": "",
+          "filter": "",
+          "authenticate": false,
+          "template": "<span>{{ item.data.name }}</span>",
+          "multiple": false,
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
           "validate": {
             "required": true
           },
-          "clearOnHide": true,
-          "hidden": false,
-          "persistent": true,
-          "unique": false,
-          "protected": false,
-          "multiple": false,
-          "template": "<span>{{ item.data.name }}</span>",
-          "authenticate": false,
-          "filter": "",
-          "refreshOn": "",
-          "defaultValue": "",
-          "valueProperty": "",
-          "dataSrc": "resource",
-          "data": {
-            "project": "59c8b0f44cbbd000077d74f7",
-            "custom": "",
-            "resource": "59c8b2f8d6d99500071b2d8b",
-            "url": "",
-            "json": "",
-            "values": [
-              {
-                "label": "",
-                "value": ""
-              }
-            ]
+          "type": "select",
+          "tags": [],
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
           },
-          "placeholder": "",
-          "key": "arbitrator",
+          "properties": {
+            "": ""
+          },
+          "searchField": ""
+        },
+        {
+          "input": true,
+          "tableView": true,
           "label": "Arbitrator",
-          "tableView": true,
-          "input": true
-        },
-        {
-          "properties": {
-            "": ""
+          "key": "arbitrator",
+          "placeholder": "",
+          "data": {
+            "values": [
+              {
+                "value": "",
+                "label": ""
+              }
+            ],
+            "json": "",
+            "url": "",
+            "resource": "59c8b2f8d6d99500071b2d8b",
+            "custom": "",
+            "project": "59c8b0f44cbbd000077d74f7"
           },
-          "conditional": {
-            "eq": "",
-            "when": null,
-            "show": ""
-          },
-          "tags": [],
-          "type": "select",
+          "dataSrc": "resource",
+          "valueProperty": "",
+          "defaultValue": "",
+          "refreshOn": "",
+          "filter": "",
+          "authenticate": false,
+          "template": "<span>{{ item.data.name }}</span>",
+          "multiple": false,
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
           "validate": {
             "required": true
           },
-          "clearOnHide": true,
-          "hidden": false,
-          "persistent": true,
-          "unique": false,
-          "protected": false,
-          "multiple": false,
-          "template": "<span>{{ item.data.name }}</span>",
-          "authenticate": false,
-          "filter": "",
-          "refreshOn": "",
-          "defaultValue": "",
-          "valueProperty": "",
-          "dataSrc": "resource",
+          "type": "select",
+          "tags": [],
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+            "": ""
+          },
+          "lockKey": true,
+          "searchField": ""
+        },
+        {
+          "lockKey": true,
+          "input": true,
+          "tableView": true,
+          "label": "Shipper",
+          "key": "shipper",
+          "placeholder": "",
           "data": {
-            "project": "59c8b0f44cbbd000077d74f7",
-            "custom": "",
-            "resource": "59c8b2f8d6d99500071b2d8b",
-            "url": "",
-            "json": "",
             "values": [
               {
-                "label": "",
-                "value": ""
+                "value": "",
+                "label": ""
               }
-            ]
+            ],
+            "json": "",
+            "url": "",
+            "resource": "59c8b2f8d6d99500071b2d8b",
+            "custom": "",
+            "project": "59c8b0f44cbbd000077d74f7"
           },
-          "placeholder": "",
-          "key": "shipper",
-          "label": "Shipper",
-          "tableView": true,
-          "input": true,
-          "lockKey": true
+          "dataSrc": "resource",
+          "valueProperty": "",
+          "defaultValue": "",
+          "refreshOn": "",
+          "filter": "",
+          "authenticate": false,
+          "template": "<span>{{ item.data.name }}</span>",
+          "multiple": false,
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": true
+          },
+          "type": "select",
+          "tags": [],
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {
+            "": ""
+          }
         }
       ],
-      "input": false,
-      "key": "parties",
-      "theme": "default",
-      "tableView": false
-    },
-    {
-      "lockKey": true,
+      "title": "Parties",
+      "type": "panel",
+      "breadcrumb": "default",
+      "tags": [],
+      "conditional": {
+        "show": "",
+        "when": null,
+        "eq": ""
+      },
       "properties": {
         "": ""
       },
-      "conditional": {
-        "eq": "",
-        "when": null,
-        "show": ""
-      },
-      "tags": [],
-      "breadcrumb": "default",
-      "tableView": false,
-      "theme": "default",
-      "key": "deal",
-      "input": false,
-      "components": [
-        {
-          "lockKey": true,
-          "properties": {
-            "": ""
-          },
-          "tags": [],
-          "type": "textfield",
-          "conditional": {
-            "eq": "",
-            "when": null,
-            "show": ""
-          },
-          "validate": {
-            "customPrivate": false,
-            "custom": "",
-            "pattern": "",
-            "maxLength": "",
-            "minLength": "",
-            "required": true
-          },
-          "clearOnHide": true,
-          "hidden": false,
-          "persistent": true,
-          "unique": false,
-          "protected": false,
-          "defaultValue": "",
-          "multiple": false,
-          "suffix": "",
-          "prefix": "",
-          "placeholder": "",
-          "key": "productDescription",
-          "label": "Product description",
-          "inputMask": "",
-          "inputType": "text",
-          "tableView": true,
-          "input": true
-        },
-        {
-          "lockKey": true,
-          "properties": {
-            "": ""
-          },
-          "tags": [],
-          "type": "textfield",
-          "conditional": {
-            "eq": "",
-            "when": null,
-            "show": ""
-          },
-          "validate": {
-            "customPrivate": false,
-            "custom": "",
-            "pattern": "",
-            "maxLength": "",
-            "minLength": "",
-            "required": true
-          },
-          "clearOnHide": true,
-          "hidden": false,
-          "persistent": true,
-          "unique": false,
-          "protected": false,
-          "defaultValue": "",
-          "multiple": false,
-          "suffix": "",
-          "prefix": "",
-          "placeholder": "",
-          "key": "priceUsd",
-          "label": "Price USD",
-          "inputMask": "",
-          "inputType": "text",
-          "tableView": true,
-          "input": true
-        },
-        {
-          "properties": {
-            "": ""
-          },
-          "tags": [],
-          "type": "textfield",
-          "conditional": {
-            "eq": "",
-            "when": null,
-            "show": ""
-          },
-          "validate": {
-            "customPrivate": false,
-            "custom": "",
-            "pattern": "",
-            "maxLength": "",
-            "minLength": "",
-            "required": true
-          },
-          "clearOnHide": true,
-          "hidden": false,
-          "persistent": true,
-          "unique": false,
-          "protected": false,
-          "defaultValue": "",
-          "multiple": false,
-          "suffix": "",
-          "prefix": "",
-          "placeholder": "",
-          "key": "dealPickuptimemax",
-          "label": "Pickup time max",
-          "inputMask": "",
-          "inputType": "text",
-          "tableView": true,
-          "input": true
-        },
-        {
-          "lockKey": true,
-          "properties": {
-            "": ""
-          },
-          "tags": [],
-          "type": "textfield",
-          "conditional": {
-            "eq": "",
-            "when": null,
-            "show": ""
-          },
-          "validate": {
-            "customPrivate": false,
-            "custom": "",
-            "pattern": "",
-            "maxLength": "",
-            "minLength": "",
-            "required": true
-          },
-          "clearOnHide": true,
-          "hidden": false,
-          "persistent": true,
-          "unique": false,
-          "protected": false,
-          "defaultValue": "",
-          "multiple": false,
-          "suffix": "",
-          "prefix": "",
-          "placeholder": "",
-          "key": "deliveryclaimdelay",
-          "label": "Delivery claim delay",
-          "inputMask": "",
-          "inputType": "text",
-          "tableView": true,
-          "input": true
-        },
-        {
-          "lockKey": true,
-          "properties": {
-            "": ""
-          },
-          "tags": [],
-          "type": "textfield",
-          "conditional": {
-            "eq": "",
-            "when": null,
-            "show": ""
-          },
-          "validate": {
-            "customPrivate": false,
-            "custom": "",
-            "pattern": "",
-            "maxLength": "",
-            "minLength": "",
-            "required": true
-          },
-          "clearOnHide": true,
-          "hidden": false,
-          "persistent": true,
-          "unique": false,
-          "protected": false,
-          "defaultValue": "",
-          "multiple": false,
-          "suffix": "",
-          "prefix": "",
-          "placeholder": "",
-          "key": "deliverypaymenttimespan",
-          "label": "Delivery payment timespan",
-          "inputMask": "",
-          "inputType": "text",
-          "tableView": true,
-          "input": true
-        },
-        {
-          "lockKey": true,
-          "properties": {
-            "": ""
-          },
-          "tags": [],
-          "type": "textfield",
-          "conditional": {
-            "eq": "",
-            "when": null,
-            "show": ""
-          },
-          "validate": {
-            "customPrivate": false,
-            "custom": "",
-            "pattern": "",
-            "maxLength": "",
-            "minLength": "",
-            "required": true
-          },
-          "clearOnHide": true,
-          "hidden": false,
-          "persistent": true,
-          "unique": false,
-          "protected": false,
-          "defaultValue": "",
-          "multiple": false,
-          "suffix": "",
-          "prefix": "",
-          "placeholder": "",
-          "key": "escrowfeeUsd",
-          "label": "Escrow fee USD",
-          "inputMask": "",
-          "inputType": "text",
-          "tableView": true,
-          "input": true
-        },
-        {
-          "properties": {
-            "": ""
-          },
-          "tags": [],
-          "type": "textfield",
-          "conditional": {
-            "eq": "",
-            "when": null,
-            "show": ""
-          },
-          "validate": {
-            "customPrivate": false,
-            "custom": "",
-            "pattern": "",
-            "maxLength": "",
-            "minLength": "",
-            "required": true
-          },
-          "clearOnHide": true,
-          "hidden": false,
-          "persistent": true,
-          "unique": false,
-          "protected": false,
-          "defaultValue": "",
-          "multiple": false,
-          "suffix": "",
-          "prefix": "",
-          "placeholder": "",
-          "key": "dealEscrowsignYmd",
-          "label": "Escrow sign YMD",
-          "inputMask": "",
-          "inputType": "text",
-          "tableView": true,
-          "input": true
-        },
-        {
-          "lockKey": true,
-          "properties": {
-            "": ""
-          },
-          "tags": [],
-          "type": "textfield",
-          "conditional": {
-            "eq": "",
-            "when": null,
-            "show": ""
-          },
-          "validate": {
-            "customPrivate": false,
-            "custom": "",
-            "pattern": "",
-            "maxLength": "",
-            "minLength": "",
-            "required": true
-          },
-          "clearOnHide": true,
-          "hidden": false,
-          "persistent": true,
-          "unique": false,
-          "protected": false,
-          "defaultValue": "",
-          "multiple": false,
-          "suffix": "",
-          "prefix": "",
-          "placeholder": "",
-          "key": "escroweffectiveYmd",
-          "label": "Escrow effective YMD",
-          "inputMask": "",
-          "inputType": "text",
-          "tableView": true,
-          "input": true
-        },
-        {
-          "lockKey": true,
-          "properties": {
-            "": ""
-          },
-          "tags": [],
-          "type": "textfield",
-          "conditional": {
-            "eq": "",
-            "when": null,
-            "show": ""
-          },
-          "validate": {
-            "customPrivate": false,
-            "custom": "",
-            "pattern": "",
-            "maxLength": "",
-            "minLength": "",
-            "required": true
-          },
-          "clearOnHide": true,
-          "hidden": false,
-          "persistent": true,
-          "unique": false,
-          "protected": false,
-          "defaultValue": "",
-          "multiple": false,
-          "suffix": "",
-          "prefix": "",
-          "placeholder": "",
-          "key": "disputenoticewithindays",
-          "label": "Dispute notice within days",
-          "inputMask": "",
-          "inputType": "text",
-          "tableView": true,
-          "input": true
-        },
-        {
-          "lockKey": true,
-          "properties": {
-            "": ""
-          },
-          "tags": [],
-          "type": "textfield",
-          "conditional": {
-            "eq": "",
-            "when": null,
-            "show": ""
-          },
-          "validate": {
-            "customPrivate": false,
-            "custom": "",
-            "pattern": "",
-            "maxLength": "",
-            "minLength": "",
-            "required": true
-          },
-          "clearOnHide": true,
-          "hidden": false,
-          "persistent": true,
-          "unique": false,
-          "protected": false,
-          "defaultValue": "",
-          "multiple": false,
-          "suffix": "",
-          "prefix": "",
-          "placeholder": "",
-          "key": "dealTextField",
-          "label": "Arb fee USD",
-          "inputMask": "",
-          "inputType": "text",
-          "tableView": true,
-          "input": true
-        },
-        {
-          "lockKey": true,
-          "properties": {
-            "": ""
-          },
-          "tags": [],
-          "type": "textfield",
-          "conditional": {
-            "eq": "",
-            "when": null,
-            "show": ""
-          },
-          "validate": {
-            "customPrivate": false,
-            "custom": "",
-            "pattern": "",
-            "maxLength": "",
-            "minLength": "",
-            "required": true
-          },
-          "clearOnHide": true,
-          "hidden": false,
-          "persistent": true,
-          "unique": false,
-          "protected": false,
-          "defaultValue": "",
-          "multiple": false,
-          "suffix": "",
-          "prefix": "",
-          "placeholder": "",
-          "key": "arbSeatCity",
-          "label": "Arb seat city",
-          "inputMask": "",
-          "inputType": "text",
-          "tableView": true,
-          "input": true
-        },
-        {
-          "lockKey": true,
-          "properties": {
-            "": ""
-          },
-          "tags": [],
-          "type": "textfield",
-          "conditional": {
-            "eq": "",
-            "when": null,
-            "show": ""
-          },
-          "validate": {
-            "customPrivate": false,
-            "custom": "",
-            "pattern": "",
-            "maxLength": "",
-            "minLength": "",
-            "required": true
-          },
-          "clearOnHide": true,
-          "hidden": false,
-          "persistent": true,
-          "unique": false,
-          "protected": false,
-          "defaultValue": "",
-          "multiple": false,
-          "suffix": "",
-          "prefix": "",
-          "placeholder": "",
-          "key": "arbOrg",
-          "label": "Arb org",
-          "inputMask": "",
-          "inputType": "text",
-          "tableView": true,
-          "input": true
-        },
-        {
-          "lockKey": true,
-          "properties": {
-            "": ""
-          },
-          "tags": [],
-          "type": "textfield",
-          "conditional": {
-            "eq": "",
-            "when": null,
-            "show": ""
-          },
-          "validate": {
-            "customPrivate": false,
-            "custom": "",
-            "pattern": "",
-            "maxLength": "",
-            "minLength": "",
-            "required": true
-          },
-          "clearOnHide": true,
-          "hidden": false,
-          "persistent": true,
-          "unique": false,
-          "protected": false,
-          "defaultValue": "",
-          "multiple": false,
-          "suffix": "",
-          "prefix": "",
-          "placeholder": "",
-          "key": "arbCourtCountyState",
-          "label": "Arb court county state",
-          "inputMask": "",
-          "inputType": "text",
-          "tableView": true,
-          "input": true
-        }
-      ],
-      "title": "Deal",
-      "type": "panel"
+      "lockKey": true
     },
     {
-      "input": true,
-      "label": "Submit",
+      "type": "panel",
+      "title": "Deal",
+      "components": [
+        {
+          "input": true,
+          "tableView": true,
+          "inputType": "text",
+          "inputMask": "",
+          "label": "Product description",
+          "key": "productDescription",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": "",
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": true,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": "",
+            "custom": "",
+            "customPrivate": false
+          },
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "type": "textfield",
+          "tags": [],
+          "properties": {
+            "": ""
+          },
+          "lockKey": true
+        },
+        {
+          "input": true,
+          "tableView": true,
+          "inputType": "text",
+          "inputMask": "",
+          "label": "Price USD",
+          "key": "priceUsd",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": "",
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": true,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": "",
+            "custom": "",
+            "customPrivate": false
+          },
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "type": "textfield",
+          "tags": [],
+          "properties": {
+            "": ""
+          },
+          "lockKey": true
+        },
+        {
+          "input": true,
+          "tableView": true,
+          "inputType": "text",
+          "inputMask": "",
+          "label": "Pickup time max",
+          "key": "dealPickuptimemax",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": "",
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": true,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": "",
+            "custom": "",
+            "customPrivate": false
+          },
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "type": "textfield",
+          "tags": [],
+          "properties": {
+            "": ""
+          }
+        },
+        {
+          "input": true,
+          "tableView": true,
+          "inputType": "text",
+          "inputMask": "",
+          "label": "Delivery claim delay",
+          "key": "deliveryclaimdelay",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": "",
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": true,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": "",
+            "custom": "",
+            "customPrivate": false
+          },
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "type": "textfield",
+          "tags": [],
+          "properties": {
+            "": ""
+          },
+          "lockKey": true
+        },
+        {
+          "input": true,
+          "tableView": true,
+          "inputType": "text",
+          "inputMask": "",
+          "label": "Delivery payment timespan",
+          "key": "deliverypaymenttimespan",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": "",
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": true,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": "",
+            "custom": "",
+            "customPrivate": false
+          },
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "type": "textfield",
+          "tags": [],
+          "properties": {
+            "": ""
+          },
+          "lockKey": true
+        },
+        {
+          "input": true,
+          "tableView": true,
+          "inputType": "text",
+          "inputMask": "",
+          "label": "Escrow fee USD",
+          "key": "escrowfeeUsd",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": "",
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": true,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": "",
+            "custom": "",
+            "customPrivate": false
+          },
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "type": "textfield",
+          "tags": [],
+          "properties": {
+            "": ""
+          },
+          "lockKey": true
+        },
+        {
+          "input": true,
+          "tableView": true,
+          "inputType": "text",
+          "inputMask": "",
+          "label": "Escrow sign YMD",
+          "key": "dealEscrowsignYmd",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": "",
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": true,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": "",
+            "custom": "",
+            "customPrivate": false
+          },
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "type": "textfield",
+          "tags": [],
+          "properties": {
+            "": ""
+          }
+        },
+        {
+          "input": true,
+          "tableView": true,
+          "inputType": "text",
+          "inputMask": "",
+          "label": "Escrow effective YMD",
+          "key": "escroweffectiveYmd",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": "",
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": true,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": "",
+            "custom": "",
+            "customPrivate": false
+          },
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "type": "textfield",
+          "tags": [],
+          "properties": {
+            "": ""
+          },
+          "lockKey": true
+        },
+        {
+          "input": true,
+          "tableView": true,
+          "inputType": "text",
+          "inputMask": "",
+          "label": "Dispute notice within days",
+          "key": "disputenoticewithindays",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": "",
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": true,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": "",
+            "custom": "",
+            "customPrivate": false
+          },
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "type": "textfield",
+          "tags": [],
+          "properties": {
+            "": ""
+          },
+          "lockKey": true
+        },
+        {
+          "input": true,
+          "tableView": true,
+          "inputType": "text",
+          "inputMask": "",
+          "label": "Arb fee USD",
+          "key": "dealTextField",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": "",
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": true,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": "",
+            "custom": "",
+            "customPrivate": false
+          },
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "type": "textfield",
+          "tags": [],
+          "properties": {
+            "": ""
+          },
+          "lockKey": true
+        },
+        {
+          "input": true,
+          "tableView": true,
+          "inputType": "text",
+          "inputMask": "",
+          "label": "Arb seat city",
+          "key": "arbSeatCity",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": "",
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": true,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": "",
+            "custom": "",
+            "customPrivate": false
+          },
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "type": "textfield",
+          "tags": [],
+          "properties": {
+            "": ""
+          },
+          "lockKey": true
+        },
+        {
+          "input": true,
+          "tableView": true,
+          "inputType": "text",
+          "inputMask": "",
+          "label": "Arb org",
+          "key": "arbOrg",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": "",
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": true,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": "",
+            "custom": "",
+            "customPrivate": false
+          },
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "type": "textfield",
+          "tags": [],
+          "properties": {
+            "": ""
+          },
+          "lockKey": true
+        },
+        {
+          "input": true,
+          "tableView": true,
+          "inputType": "text",
+          "inputMask": "",
+          "label": "Arb court county state",
+          "key": "arbCourtCountyState",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": "",
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": true,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": "",
+            "custom": "",
+            "customPrivate": false
+          },
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "type": "textfield",
+          "tags": [],
+          "properties": {
+            "": ""
+          },
+          "lockKey": true
+        }
+      ],
+      "input": false,
+      "key": "deal",
+      "theme": "default",
       "tableView": false,
-      "key": "submit",
-      "size": "md",
-      "leftIcon": "",
-      "rightIcon": "",
-      "block": false,
-      "action": "submit",
-      "disableOnInvalid": false,
+      "breadcrumb": "default",
+      "tags": [],
+      "conditional": {
+        "show": "",
+        "when": null,
+        "eq": ""
+      },
+      "properties": {
+        "": ""
+      },
+      "lockKey": true
+    },
+    {
+      "type": "button",
       "theme": "primary",
-      "type": "button"
+      "disableOnInvalid": false,
+      "action": "submit",
+      "block": false,
+      "rightIcon": "",
+      "leftIcon": "",
+      "size": "md",
+      "key": "submit",
+      "tableView": false,
+      "label": "Submit",
+      "input": true
     }
   ],
   "owner": "59c8b0e14cbbd000077d74f4",
